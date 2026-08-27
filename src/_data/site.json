@@ -1,0 +1,18 @@
+{
+    "name": "Tinaba",
+    "year": "2026",
+    "company": {
+        "name": "Tinaba S.p.A.",
+        "address": "Via Cerva, 28 · 20122 Milano (MI) · Italia",
+        "taxId": "C.F. e P.IVA 09158950965",
+        "rea": "R.E.A. MI-2072562",
+        "capital": "Capitale sociale €105.266 i.v."
+    },
+    "title": "Technology for the next generation of banking",
+    "description": "Tinaba sviluppa tecnologia fintech per aiutare le banche a costruire il proprio canale digitale.",
+    "navigation": [
+        { "label": "La piattaforma", "url": "/piattaforma/" },
+        { "label": "Per le banche", "url": "/per-le-banche/" },
+        { "label": "Tinaba", "url": "/tinaba/" }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "name": "tinaba-institutional-site",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "engines": {
+        "node": ">=24.0.0"
+    },
+    "scripts": {
+        "dev": "eleventy --serve",
+        "build": "eleventy",
+        "lint": "eslint .",
+        "lint-ts": "npx --yes --package typescript tsc -p jsconfig.json --noEmit",
+        "test": "node --test",
+        "validate": "npm run lint && npm run lint-ts && npm run test"
+    },
+    "devDependencies": {
+        "@11ty/eleventy": "^3.1.2",
+        "@eslint/js": "^9.35.0",
+        "@fontsource/dm-mono": "^5.3.0",
+        "@fontsource/manrope": "^5.3.0",
+        "eslint": "^9.35.0",
+        "eslint-config-eslint": "^10.0.0",
+        "globals": "^16.3.0"
+    }
+}
