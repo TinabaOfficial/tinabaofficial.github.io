@@ -30,6 +30,12 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
   publication.
 - Keep the footer corporate block synchronized with `src/_data/site.json` and
   the approved company details used in the privacy page.
+- Treat the footer value as a progressive site build number, starting at the
+  currently published value and incrementing it for every site change. Update
+  the build number and build date together in `src/_data/site.json`, keep the
+  generated `docs/` output synchronized, and display them as `vN · DD.MM.YYYY`
+  beside the Tinaba wordmark. The npm package version is independent from this
+  site build number.
 - Use the approved favicon asset from the current Tinaba site; do not replace
   it with a placeholder mark without explicit approval.
 - Use `src/assets/tinaba-logo.png` as the wordmark icon. Keep its image
@@ -40,10 +46,34 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
 - The Banca Profilo case study may use the official Tinaba themes of bank
   integration, open ecosystem, collaboration, and omnichannel experience.
   Distinguish Tinaba's technology role from Banca Profilo's banking role.
+- When describing AML and fraud controls, GIANOS may be referenced as a
+  specialist AML monitoring system and XTN as a digital anti-fraud monitoring
+  system. Present them as integrations within the agreed bank perimeter and
+  responsibilities; never describe either one as a certification or use them
+  alone to claim blanket regulatory compliance.
 - Do not copy unverified commercial estimates, consumer claims, or third-party
   forms and reCAPTCHA from the source page into this tracking-free site.
 - Self-hosted fonts must be preloaded for the critical weights and use a
   display strategy that avoids a visible fallback-font swap or layout shift.
+- Public content may be expanded using the BPF/Tinaba presentation and other
+  external product research only by generalising and rewriting the underlying
+  concepts. Do not copy source wording, confidential material, preliminary
+  pricing, implementation estimates, or unapproved commercial claims.
+- The Banca Profilo case study may use rounded operational proof points and
+  trends, such as `67k -> 164k` active customers, `+145%` growth, and roughly
+  `480k` monthly operations with a peak above `530k`, only with the relevant
+  period and a note that values are rounded. Keep the source definitions and
+  publication approval in mind before adding or changing figures.
+- The public site currently excludes digital-credit scoring and data-based
+  credit-evaluation claims. Do not reintroduce that topic from external
+  research unless it is explicitly approved for the site.
+- The certification section must say that the pathway is in progress. It may
+  list ISO/IEC 27001:2022, ISO/IEC 27017:2015, ISO/IEC 27018:2019, and ISO
+  22301:2019 as the intended integrated framework, but must not imply that any
+  certification has already been achieved.
+- Do not restore `src/CNAME` or generate `docs/CNAME` until publication on the
+  custom domain is explicitly approved. GitHub Pages output must remain
+  buildable without a custom-domain declaration in the meantime.
 - Run `npm run build` after content or template changes and inspect the output.
 - Run `npm run validate` before committing application changes.
 
