@@ -19,6 +19,8 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
   descriptive link names, and `prefers-reduced-motion` support.
 - Check foreground/background combinations in every visual state, including
   muted labels on dark surfaces and accent text, against WCAG AA before release.
+- Hero subtitles on dark surfaces must use the dedicated high-contrast light
+  tone; never inherit the muted body color intended for light backgrounds.
 - Keep `.section-light .section-kicker` at the darker accessible tone defined
   in the stylesheet; do not restore the generic muted color there.
 - The site must remain tracking-free: no analytics, pixels, advertising,
@@ -96,6 +98,13 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
 - Footer grid columns must be shrinkable and corporate data must wrap safely;
   long legal identifiers must never create horizontal overflow or clip the
   footer at the viewport edge.
+- Approved public Tinaba/Banca Profilo reference images used in the site are
+  stored locally under `src/assets/reference/`, referenced from templates with
+  meaningful alternative text, and never loaded from the source websites at
+  runtime. Review image rights and publication approval before deployment.
+- Case-use and hero media must preserve the source image's aspect ratio;
+  panoramic or edge-sensitive assets require a dedicated layout treatment and
+  must not be cropped with the default portrait/card treatment.
 - Background motion is decorative only: it uses CSS transforms, has no runtime
   dependency or external request, and must remain disabled for users who prefer
   reduced motion.
