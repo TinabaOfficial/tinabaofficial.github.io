@@ -97,6 +97,17 @@ h3 { font-size: 1.75rem; line-height: 1.05; letter-spacing: -.06em; }
 .connection-node-core { top: calc(50% - 52px); left: calc(50% - 52px); }
 .connection-node-app { top: 16px; right: 8%; }
 .connection-node-services { right: 8%; bottom: 16px; }
+.connection-node-app, .connection-node-services { will-change: transform; }
+.connection-node-app { animation: connect-app 6s ease-in-out infinite; }
+.connection-node-services { animation: connect-services 6s ease-in-out .65s infinite; }
+@keyframes connect-app {
+    0%, 18%, 82%, 100% { transform: translate3d(0, 0, 0); }
+    50% { transform: translate3d(-105px, 78px, 0); }
+}
+@keyframes connect-services {
+    0%, 18%, 82%, 100% { transform: translate3d(0, 0, 0); }
+    50% { transform: translate3d(-105px, -78px, 0); }
+}
 .roadmap-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
 .roadmap-grid article { min-height: 245px; padding: 25px; border-top: 1px solid var(--line); }
 .roadmap-grid span { display: block; margin-bottom: 60px; color: var(--muted); font-family: 'DM Mono', monospace; font-size: 11px; }
@@ -216,6 +227,14 @@ h3 { font-size: 1.75rem; line-height: 1.05; letter-spacing: -.06em; }
     .hero-art { min-height: 300px; margin-top: 60px; }
     .connection-band-grid { display: block; }
     .connection-diagram { min-height: 250px; margin-top: 45px; }
+    @keyframes connect-app {
+        0%, 18%, 82%, 100% { transform: translate3d(0, 0, 0); }
+        50% { transform: translate3d(-58px, 34px, 0); }
+    }
+    @keyframes connect-services {
+        0%, 18%, 82%, 100% { transform: translate3d(0, 0, 0); }
+        50% { transform: translate3d(-58px, -34px, 0); }
+    }
     h1 { font-size: clamp(3.2rem, 16vw, 5.2rem); }
     h2 { font-size: clamp(2.4rem, 11vw, 3.5rem); }
     .section, .page-hero { padding: 75px 0; }

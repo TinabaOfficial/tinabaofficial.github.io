@@ -67,6 +67,9 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
 - The homepage may use a dark hero, high-contrast accent sections, a CSS-only
   connection diagram, and a lime roadmap to establish stronger visual rhythm.
   Preserve responsive layout, WCAG AA contrast, and reduced-motion behavior.
+- In the homepage connection diagram, APP and Servizi may converge toward Core
+  banking through a slow CSS-only transform animation. Keep the movement
+  decorative, responsive, and disabled for users who prefer reduced motion.
 - Do not copy unverified commercial estimates, consumer claims, or third-party
   forms and reCAPTCHA from the source page into this tracking-free site.
 - Self-hosted fonts must be preloaded for the critical weights and use a
