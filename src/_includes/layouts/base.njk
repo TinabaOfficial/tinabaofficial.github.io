@@ -25,7 +25,18 @@
             <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">Menu</button>
             <nav id="main-navigation" class="main-navigation" aria-label="Navigazione principale">
                 {% for item in site.navigation %}
-                    <a href="{{ item.url }}">{{ item.label }}</a>
+                    {% if item.items %}
+                        <details class="nav-group">
+                            <summary>{{ item.label }} <span aria-hidden="true">⌄</span></summary>
+                            <div class="nav-panel">
+                                {% for child in item.items %}
+                                    <a href="{{ child.url }}"><strong>{{ child.label }}</strong><small>{{ child.description }}</small></a>
+                                {% endfor %}
+                            </div>
+                        </details>
+                    {% else %}
+                        <a href="{{ item.url }}">{{ item.label }}</a>
+                    {% endif %}
                 {% endfor %}
                 <a class="button button-small" href="/contatti/">Parliamone <span aria-hidden="true">↗</span></a>
             </nav>
@@ -38,13 +49,22 @@
                 <a class="wordmark wordmark-footer" href="/" aria-label="Tinaba, home"><img class="wordmark-icon" src="/assets/tinaba-logo.png" alt=""><span>tinaba</span><span class="site-version" aria-label="Build {{ site.version }} del {{ site.buildDate }}">v{{ site.version }} · {{ site.buildDate }}</span></a>
                 <p class="footer-note">Digital banking, made possible.</p>
             </div>
-            <div class="footer-links">
-                <a href="/piattaforma/">La piattaforma</a>
-                <a href="/per-le-banche/">Per le banche</a>
-                <a href="/tinaba/">Chi siamo</a>
-                <a href="/contatti/">Contatti</a>
-                <a href="/privacy/">Privacy</a>
-            </div>
+            <nav class="footer-link-groups" aria-label="Navigazione del footer">
+                <div class="footer-links">
+                    <p class="footer-heading">Cosa facciamo</p>
+                    <a href="/piattaforma/">La piattaforma</a>
+                    <a href="/soluzioni/">Soluzioni</a>
+                    <a href="/per-le-banche/">Per le banche</a>
+                </div>
+                <div class="footer-links">
+                    <p class="footer-heading">Scenari e azienda</p>
+                    <a href="/casi-d-uso/">Casi d’uso</a>
+                    <a href="/case-study/">Case study</a>
+                    <a href="/tinaba/">Chi siamo</a>
+                    <a href="/contatti/">Contatti</a>
+                    <a href="/privacy/">Privacy</a>
+                </div>
+            </nav>
             <div class="footer-meta">
                 <span>{{ site.company.name }}</span>
                 <span>{{ site.company.address }}</span>

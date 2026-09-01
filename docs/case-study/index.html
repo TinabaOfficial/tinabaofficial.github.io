@@ -25,11 +25,37 @@
             <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">Menu</button>
             <nav id="main-navigation" class="main-navigation" aria-label="Navigazione principale">
                 
-                    <a href="/piattaforma/">La piattaforma</a>
+                    
+                        <details class="nav-group">
+                            <summary>Cosa facciamo <span aria-hidden="true">⌄</span></summary>
+                            <div class="nav-panel">
+                                
+                                    <a href="/piattaforma/"><strong>La piattaforma</strong><small>Il layer digitale per la banca</small></a>
+                                
+                                    <a href="/soluzioni/"><strong>Soluzioni</strong><small>Capability modulari, pronte a evolvere</small></a>
+                                
+                                    <a href="/per-le-banche/"><strong>Per le banche</strong><small>Un modello di adozione governato</small></a>
+                                
+                            </div>
+                        </details>
+                    
                 
-                    <a href="/per-le-banche/">Per le banche</a>
+                    
+                        <details class="nav-group">
+                            <summary>Scenari <span aria-hidden="true">⌄</span></summary>
+                            <div class="nav-panel">
+                                
+                                    <a href="/casi-d-uso/"><strong>Casi d’uso</strong><small>Esperienze che diventano servizi</small></a>
+                                
+                                    <a href="/case-study/"><strong>Case study Banca Profilo</strong><small>Una collaborazione in crescita</small></a>
+                                
+                            </div>
+                        </details>
+                    
                 
-                    <a href="/tinaba/">Tinaba</a>
+                    
+                        <a href="/tinaba/">Tinaba</a>
+                    
                 
                 <a class="button button-small" href="/contatti/">Parliamone <span aria-hidden="true">↗</span></a>
             </nav>
@@ -46,16 +72,25 @@
     <footer class="site-footer">
         <div class="container footer-grid">
             <div>
-                <a class="wordmark wordmark-footer" href="/" aria-label="Tinaba, home"><img class="wordmark-icon" src="/assets/tinaba-logo.png" alt=""><span>tinaba</span><span class="site-version" aria-label="Build 10 del 31.08.2026">v10 · 31.08.2026</span></a>
+                <a class="wordmark wordmark-footer" href="/" aria-label="Tinaba, home"><img class="wordmark-icon" src="/assets/tinaba-logo.png" alt=""><span>tinaba</span><span class="site-version" aria-label="Build 15 del 01.09.2026">v15 · 01.09.2026</span></a>
                 <p class="footer-note">Digital banking, made possible.</p>
             </div>
-            <div class="footer-links">
-                <a href="/piattaforma/">La piattaforma</a>
-                <a href="/per-le-banche/">Per le banche</a>
-                <a href="/tinaba/">Chi siamo</a>
-                <a href="/contatti/">Contatti</a>
-                <a href="/privacy/">Privacy</a>
-            </div>
+            <nav class="footer-link-groups" aria-label="Navigazione del footer">
+                <div class="footer-links">
+                    <p class="footer-heading">Cosa facciamo</p>
+                    <a href="/piattaforma/">La piattaforma</a>
+                    <a href="/soluzioni/">Soluzioni</a>
+                    <a href="/per-le-banche/">Per le banche</a>
+                </div>
+                <div class="footer-links">
+                    <p class="footer-heading">Scenari e azienda</p>
+                    <a href="/casi-d-uso/">Casi d’uso</a>
+                    <a href="/case-study/">Case study</a>
+                    <a href="/tinaba/">Chi siamo</a>
+                    <a href="/contatti/">Contatti</a>
+                    <a href="/privacy/">Privacy</a>
+                </div>
+            </nav>
             <div class="footer-meta">
                 <span>Tinaba S.p.A.</span>
                 <span>Via Cerva, 28 · 20122 Milano (MI) · Italia</span>

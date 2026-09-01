@@ -46,11 +46,6 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
 - The Banca Profilo case study may use the official Tinaba themes of bank
   integration, open ecosystem, collaboration, and omnichannel experience.
   Distinguish Tinaba's technology role from Banca Profilo's banking role.
-- When describing AML and fraud controls, GIANOS may be referenced as a
-  specialist AML monitoring system and XTN as a digital anti-fraud monitoring
-  system. Present them as integrations within the agreed bank perimeter and
-  responsibilities; never describe either one as a certification or use them
-  alone to claim blanket regulatory compliance.
 - Do not copy unverified commercial estimates, consumer claims, or third-party
   forms and reCAPTCHA from the source page into this tracking-free site.
 - Self-hosted fonts must be preloaded for the critical weights and use a
@@ -85,6 +80,48 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
 - `src/*.njk`: institutional pages and landing content.
 - `src/privacy.njk`: privacy, no-tracking, and accessibility information.
 - `docs/`: generated GitHub Pages output.
+
+## 5. Information architecture decisions
+
+- The primary navigation uses grouped, accessible disclosure menus: “Cosa
+  facciamo” contains platform, solutions, and bank-partner positioning;
+  “Scenari” contains use cases and the Banca Profilo case study. Navigation
+  labels and descriptions are maintained in `src/_data/site.json`.
+- Product capability content belongs in `/soluzioni/` and scenario storytelling
+  belongs in `/casi-d-uso/`; both pages link back to the bank adoption model and
+  to the contact page without collecting data on-site.
+- The footer mirrors the grouped information architecture: “Cosa facciamo”
+  links to platform, solutions, and bank positioning; “Scenari e azienda” links
+  to use cases, the case study, company information, contact, and privacy.
+- Footer grid columns must be shrinkable and corporate data must wrap safely;
+  long legal identifiers must never create horizontal overflow or clip the
+  footer at the viewport edge.
+- Background motion is decorative only: it uses CSS transforms, has no runtime
+  dependency or external request, and must remain disabled for users who prefer
+  reduced motion.
+
+## 6. Editorial references supplied for the site
+
+The following public pages were supplied as reference material for the
+institutional content. They are sources of themes and structural inspiration;
+their wording, claims, forms, tracking elements, and consumer calls to action
+must not be copied into this site without separate approval:
+
+- Fabrick, Customer Digital Onboarding:
+  https://www.fabrick.com/it-it/prodotti/customer-digital-onboarding/
+- Flowe, Wallet: https://www.flowe.com/prodotti-wallet
+- Flowe, Chi siamo: https://www.flowe.com/chi-siamo
+- CSE, homepage: https://www.csebo.it/
+- CSE, A chi ci rivolgiamo: https://www.csebo.it/a-chi-ci-rivolgiamo/
+- CSE, Offerta di servizio: https://www.csebo.it/offerta-di-servizio/
+- Tinaba con Banca Profilo, Alipay+:
+  https://tinaba.bancaprofilo.it/tinaba-e-alipayplus
+- Tinaba con Banca Profilo, Investimenti:
+  https://tinaba.bancaprofilo.it/investimenti
+- MDOTM: https://www.mdotm.ai/
+- Tinaba con Banca Profilo, Gruppi: https://tinaba.bancaprofilo.it/gruppi
+- Tinaba con Banca Profilo, Chi siamo:
+  https://tinaba.bancaprofilo.it/chi-siamo
 
 ## 4. Commands
 

@@ -1,6 +1,23 @@
 const menuToggle = document.querySelector(".menu-toggle");
 const navigation = document.querySelector(".main-navigation");
 
+/** @type {NodeListOf<HTMLDetailsElement>} */
+const navigationGroups = document.querySelectorAll("details.nav-group");
+
+navigationGroups.forEach(group => {
+    group.addEventListener("toggle", () => {
+        if (!group.open) {
+            return;
+        }
+
+        navigationGroups.forEach(otherGroup => {
+            if (otherGroup !== group) {
+                otherGroup.open = false;
+            }
+        });
+    });
+});
+
 if (menuToggle && navigation) {
     menuToggle.addEventListener("click", () => {
         const isOpen = menuToggle.getAttribute("aria-expanded") === "true";

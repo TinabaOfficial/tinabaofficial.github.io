@@ -1,7 +1,7 @@
 {
     "name": "Tinaba",
-    "version": "10",
-    "buildDate": "31.08.2026",
+    "version": "15",
+    "buildDate": "01.09.2026",
     "year": "2026",
     "company": {
         "name": "Tinaba S.p.A.",
@@ -13,8 +13,21 @@
     "title": "Technology for the next generation of banking",
     "description": "Tinaba sviluppa tecnologia fintech per aiutare le banche a costruire il proprio canale digitale.",
     "navigation": [
-        { "label": "La piattaforma", "url": "/piattaforma/" },
-        { "label": "Per le banche", "url": "/per-le-banche/" },
+        {
+            "label": "Cosa facciamo",
+            "items": [
+                { "label": "La piattaforma", "description": "Il layer digitale per la banca", "url": "/piattaforma/" },
+                { "label": "Soluzioni", "description": "Capability modulari, pronte a evolvere", "url": "/soluzioni/" },
+                { "label": "Per le banche", "description": "Un modello di adozione governato", "url": "/per-le-banche/" }
+            ]
+        },
+        {
+            "label": "Scenari",
+            "items": [
+                { "label": "Casi d’uso", "description": "Esperienze che diventano servizi", "url": "/casi-d-uso/" },
+                { "label": "Case study Banca Profilo", "description": "Una collaborazione in crescita", "url": "/case-study/" }
+            ]
+        },
         { "label": "Tinaba", "url": "/tinaba/" }
     ]
 }

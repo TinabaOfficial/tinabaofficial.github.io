@@ -25,18 +25,44 @@
             <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">Menu</button>
             <nav id="main-navigation" class="main-navigation" aria-label="Navigazione principale">
                 
-                    <a href="/piattaforma/">La piattaforma</a>
+                    
+                        <details class="nav-group">
+                            <summary>Cosa facciamo <span aria-hidden="true">⌄</span></summary>
+                            <div class="nav-panel">
+                                
+                                    <a href="/piattaforma/"><strong>La piattaforma</strong><small>Il layer digitale per la banca</small></a>
+                                
+                                    <a href="/soluzioni/"><strong>Soluzioni</strong><small>Capability modulari, pronte a evolvere</small></a>
+                                
+                                    <a href="/per-le-banche/"><strong>Per le banche</strong><small>Un modello di adozione governato</small></a>
+                                
+                            </div>
+                        </details>
+                    
                 
-                    <a href="/per-le-banche/">Per le banche</a>
+                    
+                        <details class="nav-group">
+                            <summary>Scenari <span aria-hidden="true">⌄</span></summary>
+                            <div class="nav-panel">
+                                
+                                    <a href="/casi-d-uso/"><strong>Casi d’uso</strong><small>Esperienze che diventano servizi</small></a>
+                                
+                                    <a href="/case-study/"><strong>Case study Banca Profilo</strong><small>Una collaborazione in crescita</small></a>
+                                
+                            </div>
+                        </details>
+                    
                 
-                    <a href="/tinaba/">Tinaba</a>
+                    
+                        <a href="/tinaba/">Tinaba</a>
+                    
                 
                 <a class="button button-small" href="/contatti/">Parliamone <span aria-hidden="true">↗</span></a>
             </nav>
         </div>
     </header>
     <main id="main-content"><section class="page-hero"><div class="container narrow"><p class="eyebrow">Per banche e istituti finanziari</p><h1>Innovare con il controllo. Crescere con un partner.</h1><p class="hero-lead">Tinaba riduce la distanza tra la visione di una banca e la sua realizzazione digitale, con un modello progressivo e modulare.</p></div></section>
-<section class="section section-light"><div class="container split-grid"><p class="section-kicker">Un modello pensato per la banca</p><div class="reason-list"><div><strong>Il cliente resta tuo</strong><p>La banca mantiene la relazione, la proprietà del cliente e il controllo dei processi.</p></div><div><strong>Esperienza personalizzata</strong><p>Journey digitali, interfacce e moduli possono essere composti in linea con il brand e le priorità dell’istituto.</p></div><div><strong>Compliance integrata</strong><p>KYC, AML e antifrode entrano nel disegno del servizio e possono integrarsi con presidi specialistici come GIANOS e XTN, con responsabilità definite insieme.</p></div></div></div></section>
+<section class="section section-light"><div class="container split-grid"><p class="section-kicker">Un modello pensato per la banca</p><div class="reason-list"><div><strong>Il cliente resta tuo</strong><p>La banca mantiene la relazione, la proprietà del cliente e il controllo dei processi.</p></div><div><strong>Esperienza personalizzata</strong><p>Journey digitali, interfacce e moduli possono essere composti in linea con il brand e le priorità dell’istituto.</p></div><div><strong>Compliance integrata</strong><p>KYC, AML e antifrode entrano nel disegno del servizio, con responsabilità, controlli e sistemi definiti insieme.</p></div></div></div></section>
 <section class="section"><div class="container split-grid"><p class="section-kicker">Dalla piattaforma al valore</p><div class="reason-list"><div><strong>Più servizi</strong><p>Pagamenti, P2P, risparmio, investimenti e altri moduli in un’esperienza coerente.</p></div><div><strong>Più relazione</strong><p>Un canale digitale capace di accompagnare clienti attuali e nuove generazioni.</p></div><div><strong>Più opportunità</strong><p>Nuovi servizi e nuove occasioni di relazione possono sostenere la crescita della banca.</p></div></div></div></section>
 <section class="section section-dark"><div class="container split-grid"><p class="section-kicker">Un’adozione governata</p><div><h2>Dal primo perimetro a un ecosistema più ampio.</h2><p class="large-copy">Si parte da uno scenario prioritario — un prodotto, un segmento o un nuovo canale — e si costruisce una roadmap misurabile. Ogni fase ha obiettivi, output e criteri di uscita condivisi prima di passare alla successiva.</p></div></div></section>
 <section class="section section-light"><div class="container"><div class="section-heading"><div><p class="eyebrow">Cosa resta alla banca</p><h2>La tecnologia abilita. La banca decide.</h2></div></div><div class="reason-list"><div><strong>Processi e controlli</strong><p>La banca mantiene il presidio dei processi bancari, dei sistemi master e dei controlli concordati.</p></div><div><strong>Prodotti e priorità</strong><p>Il perimetro dei servizi, le personalizzazioni e l’ordine di rilascio seguono la strategia dell’istituto.</p></div><div><strong>Cliente e relazione</strong><p>L’esperienza digitale rafforza il rapporto con il cliente senza spostarne la titolarità.</p></div></div></div></section>
@@ -46,16 +72,25 @@
     <footer class="site-footer">
         <div class="container footer-grid">
             <div>
-                <a class="wordmark wordmark-footer" href="/" aria-label="Tinaba, home"><img class="wordmark-icon" src="/assets/tinaba-logo.png" alt=""><span>tinaba</span><span class="site-version" aria-label="Build 10 del 31.08.2026">v10 · 31.08.2026</span></a>
+                <a class="wordmark wordmark-footer" href="/" aria-label="Tinaba, home"><img class="wordmark-icon" src="/assets/tinaba-logo.png" alt=""><span>tinaba</span><span class="site-version" aria-label="Build 15 del 01.09.2026">v15 · 01.09.2026</span></a>
                 <p class="footer-note">Digital banking, made possible.</p>
             </div>
-            <div class="footer-links">
-                <a href="/piattaforma/">La piattaforma</a>
-                <a href="/per-le-banche/">Per le banche</a>
-                <a href="/tinaba/">Chi siamo</a>
-                <a href="/contatti/">Contatti</a>
-                <a href="/privacy/">Privacy</a>
-            </div>
+            <nav class="footer-link-groups" aria-label="Navigazione del footer">
+                <div class="footer-links">
+                    <p class="footer-heading">Cosa facciamo</p>
+                    <a href="/piattaforma/">La piattaforma</a>
+                    <a href="/soluzioni/">Soluzioni</a>
+                    <a href="/per-le-banche/">Per le banche</a>
+                </div>
+                <div class="footer-links">
+                    <p class="footer-heading">Scenari e azienda</p>
+                    <a href="/casi-d-uso/">Casi d’uso</a>
+                    <a href="/case-study/">Case study</a>
+                    <a href="/tinaba/">Chi siamo</a>
+                    <a href="/contatti/">Contatti</a>
+                    <a href="/privacy/">Privacy</a>
+                </div>
+            </nav>
             <div class="footer-meta">
                 <span>Tinaba S.p.A.</span>
                 <span>Via Cerva, 28 · 20122 Milano (MI) · Italia</span>
