@@ -108,6 +108,10 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
 - Background motion is decorative only: it uses CSS transforms, has no runtime
   dependency or external request, and must remain disabled for users who prefer
   reduced motion.
+- The use-case sequence may use a decorative dotted circuit line and a moving
+  signal to show that scenarios are connected. Keep it CSS-only, subordinate to
+  the content, and leave the line and nodes visible but static under
+  `prefers-reduced-motion: reduce`.
 
 ## 6. Editorial references supplied for the site
 
