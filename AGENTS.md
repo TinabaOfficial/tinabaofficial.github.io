@@ -48,6 +48,25 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
 - The Banca Profilo case study may use the official Tinaba themes of bank
   integration, open ecosystem, collaboration, and omnichannel experience.
   Distinguish Tinaba's technology role from Banca Profilo's banking role.
+- The site exposes `/brand-guidelines/` as the canonical internal reference for
+  visual, editorial, imagery, motion, and accessibility choices.
+- The onboarding vertical lives at `/soluzioni/onboarding/` and may expand the
+  onboarding capability into acquisition, identification, document collection,
+  contracting, activation, and bank-governed integration. Keep claims
+  implementation-neutral and do not imply regulatory outcomes.
+- The solutions page includes a distinct `Robo advisory` capability. Keep its
+  public positioning at the level of digital investment journeys, profiles,
+  portfolios, accumulation, monitoring, and specialist-partner integration;
+  do not add retail fees, minimums, performance promises, or unsupported
+  regulatory claims.
+- The solutions page includes distinct capabilities for AI-assisted personal
+  financial management and Alipay+ international partnerships. Describe AI as
+  governed support for financial insight and experience design, and keep
+  Alipay+ claims at the level of documented payments, integrations, and
+  partnerships that can be explored in the use-case section.
+- The homepage may use a dark hero, high-contrast accent sections, a CSS-only
+  connection diagram, and a lime roadmap to establish stronger visual rhythm.
+  Preserve responsive layout, WCAG AA contrast, and reduced-motion behavior.
 - Do not copy unverified commercial estimates, consumer claims, or third-party
   forms and reCAPTCHA from the source page into this tracking-free site.
 - Self-hosted fonts must be preloaded for the critical weights and use a
