@@ -101,8 +101,11 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
   22301:2019 as the intended integrated framework, but must not imply that any
   certification has already been achieved.
 - Do not restore `src/CNAME` or generate `docs/CNAME` until publication on the
-  custom domain is explicitly approved. GitHub Pages output must remain
-  buildable without a custom-domain declaration in the meantime.
+  custom domain is explicitly approved. The Eleventy configuration may retain
+  an optional passthrough declaration, but the source file must remain absent
+  and every build must confirm that `docs/CNAME` is not emitted in the
+  meantime. GitHub Pages output must remain buildable without a custom-domain
+  declaration.
 - Run `npm run build` after content or template changes and inspect the output.
 - Run `npm run validate` before committing application changes.
 - Keep the standalone Tinaba link and the grouped navigation links in the
@@ -184,4 +187,33 @@ must not be copied into this site without separate approval:
 
 - `npm run dev`: local Eleventy development server.
 - `npm run build`: compile the site into `docs/`.
-- `npm run validate`: lint, type-check, and run tests.
+- `npm run lint`: run ESLint against source and configuration files.
+- `npm run lint-ts`: run the strict TypeScript check for JavaScript files.
+- `npm test`: run the Node test suite; report explicitly if no tests are
+  discovered.
+- `npm run validate`: run lint, type-check, and tests.
+
+## 7. Verification baseline
+
+- The authoritative source is `src/`; Eleventy reads `src/_includes/` and
+  `src/_data/`, copies `src/assets/`, and writes the committed deployment
+  output to `docs/`. Never use the generated HTML or CSS as an editing source.
+- The current build produces 11 HTML routes, including
+  `/soluzioni/onboarding/`, and copies the local favicon, wordmark, reference
+  images, fonts, licenses, CSS, and JavaScript into `docs/assets/`.
+- Every generated page must expose one document language, one primary `h1`,
+  the shared skip link/header/footer, local stylesheet and module script, and
+  only root-relative local runtime asset URLs apart from intentional `mailto:`
+  contact links.
+- The privacy statement is a concise implementation notice, not a substitute
+  for a complete legal review. Reconcile it with the actual hosting,
+  contact-email processing, and approved corporate details before publication.
+- A passing build proves generation only. Report build, lint, type-check,
+  tests, browser/keyboard review, contrast review, and deployment checks as
+  separate evidence. The current repository has no Node test files, so
+  `npm test` currently reports zero tests; do not describe that as test
+  coverage.
+- Before committing a site change, inspect both source and regenerated
+  `docs/`, verify that no `CNAME` was introduced, and check for external
+  runtime requests, tracking, broken internal routes, heading errors, and
+  unintended generated-file differences.
