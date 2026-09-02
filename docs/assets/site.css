@@ -98,8 +98,15 @@ h3 { font-size: 1.75rem; line-height: 1.05; letter-spacing: -.06em; }
 .connection-diagram::before, .connection-diagram::after { position: absolute; left: 25%; width: 50%; height: 1px; content: ''; background: repeating-linear-gradient(to right, #c8c8bd 0 5px, transparent 5px 12px); transform-origin: left center; }
 .connection-diagram::before { top: 50%; transform: rotate(-29deg); }
 .connection-diagram::after { top: 50%; transform: rotate(29deg); }
-.connection-node { position: absolute; z-index: 1; display: grid; width: 104px; height: 104px; place-items: center; padding: 12px; border: 1px solid var(--lime); border-radius: 50%; color: var(--ink); background: var(--lime); font-family: 'DM Mono', monospace; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; }
-.connection-node-core { top: calc(50% - 52px); left: calc(50% - 52px); }
+.connection-origin { position: absolute; top: calc(50% - 8px); left: max(12px, calc(25% - 92px)); z-index: 1; color: #d7d7cf; font-size: 13px; font-weight: 700; letter-spacing: -.03em; line-height: 1; text-align: right; text-transform: uppercase; }
+.connection-label { position: absolute; z-index: 1; padding: 3px 5px; color: #d7d7cf; background: #191919; font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: .1em; line-height: 1; text-transform: uppercase; white-space: nowrap; }
+.connection-label-channel { top: 22%; left: 41%; transform: rotate(-29deg) translateY(-8px); }
+.connection-label-relation { top: 77%; left: 41%; transform: rotate(29deg) translateY(10px); }
+.connection-node { position: absolute; z-index: 2; display: grid; width: 104px; height: 104px; place-items: center; padding: 12px; border: 1px solid var(--ink); border-radius: 50%; color: var(--ink); font-family: 'DM Mono', monospace; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; }
+.connection-node-core { background: var(--lime); }
+.connection-node-app { background: #8c83ed; }
+.connection-node-services { background: #f3784f; }
+.connection-node-core { top: calc(50% - 52px); left: calc(50% - 52px); animation: connect-core 6s ease-in-out infinite; }
 .connection-node-app { top: 16px; right: 8%; }
 .connection-node-services { right: 8%; bottom: 16px; }
 .connection-node-app, .connection-node-services { will-change: transform; }
@@ -108,6 +115,10 @@ h3 { font-size: 1.75rem; line-height: 1.05; letter-spacing: -.06em; }
 @keyframes connect-app {
     0%, 18%, 82%, 100% { transform: translate3d(0, 0, 0); }
     50% { transform: translate3d(-105px, 78px, 0); }
+}
+@keyframes connect-core {
+    0%, 18%, 82%, 100% { transform: translate3d(0, 0, 0); }
+    50% { transform: translate3d(8px, 0, 0); }
 }
 @keyframes connect-services {
     0%, 18%, 82%, 100% { transform: translate3d(0, 0, 0); }
@@ -258,6 +269,10 @@ h3 { font-size: 1.75rem; line-height: 1.05; letter-spacing: -.06em; }
     @keyframes connect-app {
         0%, 18%, 82%, 100% { transform: translate3d(0, 0, 0); }
         50% { transform: translate3d(-58px, 34px, 0); }
+    }
+    @keyframes connect-core {
+        0%, 18%, 82%, 100% { transform: translate3d(0, 0, 0); }
+        50% { transform: translate3d(5px, 0, 0); }
     }
     @keyframes connect-services {
         0%, 18%, 82%, 100% { transform: translate3d(0, 0, 0); }

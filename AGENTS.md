@@ -72,7 +72,14 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
   black utility footer while preserving the dark closing rhythm.
 - In the homepage connection diagram, APP and Servizi may converge toward Core
   banking through a slow CSS-only transform animation. Keep the movement
-  decorative, responsive, and disabled for users who prefer reduced motion.
+  decorative, responsive, and disabled for users who prefer reduced motion; the
+  Core banking node may move slightly toward them during the convergence.
+- In the homepage connection diagram, the Core banking, App, and Servizi nodes
+  reuse the hero palette (lime, violet, and orange respectively). The diagonal
+  dotted connectors may carry the restrained labels “Canale” and “Relazione”
+  outside the lines with clear separation; keep them legible on the dark
+  surface and subordinate to the nodes. The connector origin may be labelled
+  “Banca” as a single nearby anchor label.
 - Do not copy unverified commercial estimates, consumer claims, or third-party
   forms and reCAPTCHA from the source page into this tracking-free site.
 - Self-hosted fonts must be preloaded for the critical weights and use a
