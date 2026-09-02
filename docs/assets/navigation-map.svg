@@ -55,7 +55,7 @@
   <text x="622" y="968" class="item" fill="#f4f3ee" style="fill:#f4f3ee">P2P · Community</text>
   <text x="622" y="1010" class="item" fill="#f4f3ee" style="fill:#f4f3ee">Banca del territorio</text>
   <text x="622" y="1038" class="small" fill="#f4f3ee" style="fill:#f4f3ee">/scenari/banca-territorio/</text>
-  <rect x="1050" y="332" width="480" height="360" rx="4" fill="#f3784f" stroke="#111111" stroke-width="1"/>
+  <rect x="1050" y="332" width="480" height="360" rx="4" fill="#FF5E00" stroke="#111111" stroke-width="1"/>
   <text x="1082" y="370" class="mono">LIVELLO 2 · LINK DIRETTI</text>
   <text x="1082" y="424" class="label">Tinaba</text>
   <text x="1082" y="452" class="small">/tinaba/ · identità, DNA e azienda</text>

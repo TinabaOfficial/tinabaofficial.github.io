@@ -1,6 +1,6 @@
 {
     "name": "Tinaba",
-    "version": "77",
+    "version": "82",
     "buildDate": "02.09.2026",
     "year": "2026",
     "company": {
@@ -24,8 +24,6 @@
             "label": "Scenari",
             "items": [
                 { "label": "Casi d’uso", "description": "Esperienze che diventano servizi", "url": "/casi-d-uso/" },
-                { "label": "Banche private", "description": "Investimenti e servizi premium digitali", "url": "/casi-d-uso/#banche-private" },
-                { "label": "Retail e non bancari", "description": "Conto, pagamenti e servizi in white label", "url": "/casi-d-uso/#retail-non-bancari" },
                 { "label": "Banca del territorio", "description": "Onboarding digitale, relazione locale e prossimità", "url": "/scenari/banca-territorio/" },
                 { "label": "Case study Banca Profilo", "description": "Una collaborazione in crescita", "url": "/case-study/" }
             ]

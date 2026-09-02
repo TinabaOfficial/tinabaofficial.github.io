@@ -11,6 +11,8 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
 
 - Keep the site B2B and institutional: Tinaba is the technology partner;
   Banca Profilo is a case study or partner, not the site's main identity.
+- Use `#FF5E00` as the canonical orange across the visual system, brand
+  guidelines, diagrams, and illustrative assets.
 - Keep content in `src/`; never edit generated files under `docs/` directly.
 - Use Eleventy templates and Markdown for pages, semantic HTML, responsive CSS,
   and small vanilla ESM scripts only where interaction is necessary.
@@ -40,8 +42,9 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
   site build number.
 - Use the approved favicon asset from the current Tinaba site; do not replace
   it with a placeholder mark without explicit approval.
-- Use `src/assets/tinaba-logo.png` as the wordmark icon. Keep its image
-  alternative empty because the surrounding home link names the full brand.
+- Use the supplied full-wordmark `src/assets/tinaba-logo.png` in the shared
+  header and footer. Keep its image alternative empty because the surrounding
+  home link names the full brand; do not duplicate the wordmark with HTML text.
 - Smart Fintech source content may be reused in institutional pages only after
   adapting it to Tinaba's B2B positioning. Preserve the themes of legacy
   integration, client ownership, compliance, modularity, and digital growth.
@@ -98,6 +101,9 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
   they are explicitly requested and approved. Keep the dedicated “Banca del
   territorio” vertical as the single navigation entry for that scenario; the
   “Casi d’uso” page may still link to it from its audience pathway.
+- The public Banca Profilo case study no longer includes a standalone
+  “Un’esperienza misurabile” section; do not reintroduce it without explicit
+  approval.
 - The public site currently excludes digital-credit scoring and data-based
   credit-evaluation claims. Do not reintroduce that topic from external
   research unless it is explicitly approved for the site.
@@ -137,6 +143,10 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
 - Dark onboarding flows must override the light-surface circuit colors so
   their dotted connector and animated signal remain visible with WCAG-aware
   contrast; muted step descriptions must use the dark-surface light tone.
+- The dark `/tinaba/` values section must keep its heading and supporting copy
+  inside their grid tracks at desktop widths; `.values-grid` children must be
+  shrinkable, the heading must have a bounded measure, and its first track
+  must remain wide enough for the longest heading word.
 
 ## 3. Project Layout
 
@@ -151,7 +161,10 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
 
 - The primary navigation uses grouped, accessible disclosure menus: “Cosa
   facciamo” contains platform, solutions, and bank-partner positioning;
-  “Scenari” contains use cases and the Banca Profilo case study. Navigation
+  “Scenari” contains the use-case landing page, dedicated audience verticals,
+  and the Banca Profilo case study. Keep audience anchors that live inside
+  `/casi-d-uso/` out of the menu to avoid duplicating the landing page.
+  Navigation
   labels and descriptions are maintained in `src/_data/site.json`.
 - The navigation architecture is documented in `/brand-guidelines/` as a
   semantic responsive tree list, including levels two and three. Keep page
