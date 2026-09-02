@@ -93,6 +93,11 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
   `480k` monthly operations with a peak above `530k`, only with the relevant
   period and a note that values are rounded. Keep the source definitions and
   publication approval in mind before adding or changing figures.
+- For the public Banca Profilo case study, prefer percentage growth as the
+  visible proof point and omit absolute customer and operation counts unless
+  they are explicitly requested and approved. Keep the dedicated “Banca del
+  territorio” vertical as the single navigation entry for that scenario; the
+  “Casi d’uso” page may still link to it from its audience pathway.
 - The public site currently excludes digital-credit scoring and data-based
   credit-evaluation claims. Do not reintroduce that topic from external
   research unless it is explicitly approved for the site.
@@ -148,15 +153,17 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
   facciamo” contains platform, solutions, and bank-partner positioning;
   “Scenari” contains use cases and the Banca Profilo case study. Navigation
   labels and descriptions are maintained in `src/_data/site.json`.
-- The navigation architecture is also documented visually, including levels
-  two and three, in `src/assets/navigation-map.svg`, embedded in
-  `/brand-guidelines/`. Include page routes, approved solution anchors, use
-  cases, contact and footer references when they exist in the source. Treat
-  `src/_data/site.json` as the canonical source for primary labels and update
-  the map whenever the information architecture changes; the map is editorial
-  guidance, not a replacement for semantic accessible navigation. Keep the map
-  light and editorial: no dotted connectors, explanatory metadata, or footer
-  block inside the artwork.
+- The navigation architecture is documented in `/brand-guidelines/` as a
+  semantic responsive tree list, including levels two and three. Keep page
+  routes, approved solution anchors, use cases, contact and footer references
+  synchronized with the source navigation. The former SVG map may remain as a
+  repository asset only if it is needed for an approved secondary visual; it is
+  not the primary representation of the architecture. On the light surface,
+  use ink for the root connector, violet for level two, and orange for level
+  three; do not use the bright lime connector on white.
+- Keep the transition from the architecture tree to the following Brand
+  Guidelines section compact; do not apply the full section padding twice at
+  that boundary.
 - Product capability content belongs in `/soluzioni/` and scenario storytelling
   belongs in `/casi-d-uso/`; both pages link back to the bank adoption model and
   to the contact page without collecting data on-site.
