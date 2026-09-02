@@ -137,6 +137,12 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
   signal to show that scenarios are connected. Keep it CSS-only, subordinate to
   the content, and leave the line and nodes visible but static under
   `prefers-reduced-motion: reduce`.
+- Ordered index groups reuse the same decorative circuit language: vertical
+  connectors are used for the platform and case-study lists, horizontal
+  connectors for the homepage roadmap and onboarding journey, and a static
+  connector for the brand principles. Category labels such as solution cards
+  and homepage feature cards remain unconnected. The lime homepage roadmap
+  uses a black moving signal for contrast.
 
 ## 6. Editorial references supplied for the site
 
