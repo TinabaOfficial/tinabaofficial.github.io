@@ -95,6 +95,9 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
   buildable without a custom-domain declaration in the meantime.
 - Run `npm run build` after content or template changes and inspect the output.
 - Run `npm run validate` before committing application changes.
+- Keep the standalone Tinaba link in the main header navigation visually
+  distinct: it uses the lime background highlight on hover, with spacing
+  reserved to avoid layout shift.
 
 ## 3. Project Layout
 

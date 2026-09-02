@@ -35,7 +35,7 @@
                             </div>
                         </details>
                     {% else %}
-                        <a href="{{ item.url }}">{{ item.label }}</a>
+                        <a class="{% if item.label == 'Tinaba' %}header-tinaba-link{% endif %}" href="{{ item.url }}">{{ item.label }}</a>
                     {% endif %}
                 {% endfor %}
                 <a class="button button-small" href="/contatti/">Parliamone <span aria-hidden="true">↗</span></a>
