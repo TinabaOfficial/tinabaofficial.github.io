@@ -146,6 +146,9 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
   connector for the brand principles. Category labels such as solution cards
   and homepage feature cards remain unconnected. The lime homepage roadmap
   uses a black moving signal for contrast.
+- The “Il nostro DNA” section on `/tinaba/` is an ordered three-part sequence
+  with numbered circular markers, a horizontal connector, and a lime moving
+  signal; its article borders must remain disabled to avoid duplicate lines.
 
 ## 6. Editorial references supplied for the site
 
