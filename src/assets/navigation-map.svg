@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
   <title id="title">Architettura completa della navigazione del sito Tinaba</title>
-  <desc id="desc">Mappa a tre livelli della navigazione Tinaba. Il primo livello contiene Cosa facciamo, Scenari, Tinaba, Parliamone e il footer. Il secondo livello contiene le pagine principali. Il terzo livello dettaglia le capability, i casi d’uso e il percorso di onboarding.</desc>
+  <desc id="desc">Mappa a tre livelli della navigazione Tinaba. Il primo livello contiene Cosa facciamo, Soluzioni, Scenari, Tinaba e Parliamone. Il secondo livello contiene le pagine principali. Il terzo livello dettaglia capability, percorsi per tipo di banca, casi d’uso e onboarding.</desc>
   <style>
     text { font-family: Arial, sans-serif; fill: #111111; }
     .mono { font-family: monospace; font-size: 14px; letter-spacing: 1px; }
@@ -16,7 +16,8 @@
   <text x="102" y="206" class="mono">LIVELLO 1 · NAVIGAZIONE PRINCIPALE</text>
   <text x="102" y="242" class="label">Tinaba</text>
   <text x="530" y="226" class="item">Cosa facciamo</text>
-  <text x="820" y="226" class="item">Scenari</text>
+  <text x="760" y="226" class="item">Scenari</text>
+  <text x="900" y="226" class="item">Soluzioni</text>
   <text x="1050" y="226" class="item">Tinaba</text>
   <text x="1240" y="226" class="item">Parliamone</text>
   <rect x="70" y="332" width="480" height="360" rx="4" fill="#d7ff45"/>
@@ -30,6 +31,8 @@
   <rect x="70" y="742" width="480" height="350" rx="4" fill="#fff75a" stroke="#111111" stroke-width="1"/>
   <text x="102" y="780" class="mono">LIVELLO 3 · SOLUZIONI</text>
   <text x="102" y="824" class="item">Onboarding digitale · /soluzioni/onboarding/</text>
+  <text x="102" y="856" class="item">Lending digitale · /soluzioni/lending/</text>
+  <text x="102" y="888" class="item">Crypto · #crypto</text>
   <text x="102" y="856" class="item">Wallet e pagamenti · #wallet</text>
   <text x="102" y="888" class="item">PFM con AI · #pfm</text>
   <text x="102" y="920" class="item">Alipay+ · #alipay-plus</text>
@@ -43,13 +46,16 @@
   <text x="622" y="452" class="small" fill="#f4f3ee" style="fill:#f4f3ee">/casi-d-uso/ · esperienze e servizi</text>
   <text x="622" y="500" class="label" fill="#f4f3ee" style="fill:#f4f3ee">Case study Banca Profilo</text>
   <text x="622" y="528" class="small" fill="#f4f3ee" style="fill:#f4f3ee">/case-study/ · collaborazione concreta</text>
-  <rect x="590" y="742" width="420" height="250" rx="4" fill="#9987ff"/>
+  <rect x="590" y="742" width="420" height="350" rx="4" fill="#9987ff"/>
   <text x="622" y="780" class="mono" fill="#f4f3ee" style="fill:#f4f3ee">LIVELLO 3 · CASI D’USO</text>
   <text x="622" y="824" class="item" fill="#f4f3ee" style="fill:#f4f3ee">Pagamenti · Partnership</text>
   <text x="622" y="856" class="small" fill="#f4f3ee" style="fill:#f4f3ee">Alipay+</text>
   <text x="622" y="896" class="item" fill="#f4f3ee" style="fill:#f4f3ee">Investimenti · Personalizzazione</text>
   <text x="622" y="928" class="small" fill="#f4f3ee" style="fill:#f4f3ee">/soluzioni/#investimenti</text>
   <text x="622" y="968" class="item" fill="#f4f3ee" style="fill:#f4f3ee">P2P · Community</text>
+  <text x="622" y="1010" class="item" fill="#f4f3ee" style="fill:#f4f3ee">Banche territoriali</text>
+  <text x="622" y="1038" class="small" fill="#f4f3ee" style="fill:#f4f3ee">/casi-d-uso/#banche-territoriali</text>
+  <text x="622" y="1070" class="item" fill="#f4f3ee" style="fill:#f4f3ee">Banca del territorio · /scenari/banca-territorio/</text>
   <rect x="1050" y="332" width="480" height="360" rx="4" fill="#f3784f"/>
   <text x="1082" y="370" class="mono">LIVELLO 2 · LINK DIRETTI</text>
   <text x="1082" y="424" class="label">Tinaba</text>

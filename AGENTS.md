@@ -111,6 +111,27 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
 - Keep the standalone Tinaba link and the grouped navigation links in the
   main header visually consistent: all use a full lime background highlight
   on hover, with spacing reserved to avoid layout shift where needed.
+- The primary navigation exposes “Soluzioni” as a direct top-level link; keep
+  “Scenari” focused on audience pathways and concrete use cases. The direct
+  link must use the same full lime hover/focus highlight as “Tinaba”.
+- The top-level navigation order is “Cosa facciamo”, “Scenari”, “Soluzioni”,
+  “Tinaba”, and “Parliamone”. Lending is not a child of “Cosa facciamo”.
+- Audience pathways cover territorial banks, private banks, and
+  retail/non-bank operators. Keep their copy implementation-neutral and
+  preserve Tinaba as technology partner rather than financial-service issuer.
+- The case-study “Dicono di noi” block may contain draft quotes for Banca
+  Profilo, CheckSig, Alipay+, and MDOTM, but every quote must remain marked
+  for validation until the named partner approves wording and attribution.
+- Dedicated verticals live at `/soluzioni/lending/` for bank-governed digital
+  lending and `/scenari/banca-territorio/` for territorial-bank onboarding.
+  Keep lending copy separate from credit decisions and keep territorial-bank
+  copy centered on continuity between digital onboarding, branches, advice,
+  and local relationship.
+- The lending capability card on `/soluzioni/` must link directly to its
+  dedicated lending vertical.
+- Dark onboarding flows must override the light-surface circuit colors so
+  their dotted connector and animated signal remain visible with WCAG-aware
+  contrast; muted step descriptions must use the dark-surface light tone.
 
 ## 3. Project Layout
 
