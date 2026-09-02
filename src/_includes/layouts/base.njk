@@ -30,7 +30,7 @@
                             <summary>{{ item.label }} <span aria-hidden="true">⌄</span></summary>
                             <div class="nav-panel">
                                 {% for child in item.items %}
-                                    <a href="{{ child.url }}"><strong>{{ child.label }}</strong><small>{{ child.description }}</small></a>
+                                    <a class="nav-panel-link" href="{{ child.url }}"><strong>{{ child.label }}</strong><small>{{ child.description }}</small></a>
                                 {% endfor %}
                             </div>
                         </details>
