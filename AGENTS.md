@@ -67,6 +67,9 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
 - The homepage may use a dark hero, high-contrast accent sections, a CSS-only
   connection diagram, and a lime roadmap to establish stronger visual rhythm.
   Preserve responsive layout, WCAG AA contrast, and reduced-motion behavior.
+- The homepage “Una storia concreta” case-study banner uses a distinct
+  antracite surface (`#252525`) so it remains visually separate from the
+  black utility footer while preserving the dark closing rhythm.
 - In the homepage connection diagram, APP and Servizi may converge toward Core
   banking through a slow CSS-only transform animation. Keep the movement
   decorative, responsive, and disabled for users who prefer reduced motion.

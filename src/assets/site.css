@@ -69,7 +69,8 @@ h3 { font-size: 1.75rem; line-height: 1.05; letter-spacing: -.06em; }
 .section { padding: 125px 0; }
 .section-light { background: #e9e8e2; }
 .section-accent { background: var(--lime); }
-.section-dark, .case-banner { color: var(--paper); background: var(--ink); }
+.section-dark { color: var(--paper); background: var(--ink); }
+.case-banner { color: var(--paper); background: #252525; }
 .section-dark .eyebrow, .case-banner .eyebrow, .feature-card-dark .feature-number { color: #c8c8bd; }
 .section-dark .hero-lead, .case-banner .hero-lead { color: #d7d7cf; }
 .section-dark h1 em { color: var(--lime); }
