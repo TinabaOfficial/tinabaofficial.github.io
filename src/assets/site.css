@@ -229,6 +229,9 @@ h3 { font-size: 1.75rem; line-height: 1.05; letter-spacing: -.06em; }
 .brand-swatch-paper { border: 1px solid var(--line); background: var(--paper); }
 .brand-swatch-lime { background: var(--lime); }
 .brand-swatch-orange { color: var(--paper); background: #f3784f; }
+.navigation-map { margin: 0; }
+.navigation-map img { display: block; width: 100%; height: auto; border: 1px solid rgba(244,243,238,.2); }
+.navigation-map figcaption { margin-top: 16px; color: #c8c8bd; font-size: 13px; }
 .type-sample { margin-top: 45px; padding: 28px; background: var(--paper); border: 1px solid var(--line); }
 .type-sample-display { margin-bottom: 24px; font-size: clamp(2rem, 4vw, 4rem); line-height: 1; letter-spacing: -.08em; }
 .type-sample-mono { margin-bottom: 0; color: var(--muted); font-family: 'DM Mono', monospace; font-size: 11px; }
@@ -323,6 +326,8 @@ h3 { font-size: 1.75rem; line-height: 1.05; letter-spacing: -.06em; }
     .onboarding-flow article, .brand-principles article { min-height: 0; }
     .onboarding-flow span, .brand-principles span { margin-bottom: 28px; }
     .brand-swatch { min-height: 180px; }
+    .navigation-map { overflow-x: auto; }
+    .navigation-map img { min-width: 760px; }
 }
 @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }

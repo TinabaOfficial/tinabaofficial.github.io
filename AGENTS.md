@@ -127,6 +127,15 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
   facciamo” contains platform, solutions, and bank-partner positioning;
   “Scenari” contains use cases and the Banca Profilo case study. Navigation
   labels and descriptions are maintained in `src/_data/site.json`.
+- The navigation architecture is also documented visually, including levels
+  two and three, in `src/assets/navigation-map.svg`, embedded in
+  `/brand-guidelines/`. Include page routes, approved solution anchors, use
+  cases, contact and footer references when they exist in the source. Treat
+  `src/_data/site.json` as the canonical source for primary labels and update
+  the map whenever the information architecture changes; the map is editorial
+  guidance, not a replacement for semantic accessible navigation. Keep the map
+  light and editorial: no dotted connectors, explanatory metadata, or footer
+  block inside the artwork.
 - Product capability content belongs in `/soluzioni/` and scenario storytelling
   belongs in `/casi-d-uso/`; both pages link back to the bank adoption model and
   to the contact page without collecting data on-site.
