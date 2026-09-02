@@ -34,12 +34,12 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
   publication.
 - Keep the footer corporate block synchronized with `src/_data/site.json` and
   the approved company details used in the privacy page.
-- Treat the footer value as a progressive site build number, starting at the
-  currently published value and incrementing it for every site change. Update
-  the build number and build date together in `src/_data/site.json`, keep the
-  generated `docs/` output synchronized, and display them as `vN · DD.MM.YYYY`
-  beside the Tinaba wordmark. The npm package version is independent from this
-  site build number.
+- Treat the footer value as a progressive site build number. Before completing
+  any site change, increment the current `version` by exactly one and update
+  `version` and `buildDate` together in `src/_data/site.json`. Regenerate
+  `docs/`, verify that the footer displays the new value as `vN · DD.MM.YYYY`,
+  and never complete a site change with the previous build number. The npm
+  package version is independent from this site build number.
 - Use the approved favicon asset from the current Tinaba site; do not replace
   it with a placeholder mark without explicit approval.
 - Use the supplied full-wordmark `src/assets/tinaba-logo.png` in the shared
@@ -48,6 +48,18 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
 - Smart Fintech source content may be reused in institutional pages only after
   adapting it to Tinaba's B2B positioning. Preserve the themes of legacy
   integration, client ownership, compliance, modularity, and digital growth.
+- Public copy must use an institutional, B2B voice: assertive and appealing,
+  never tutorial or overly familiar. Keep “La tecnologia per la banca che
+  cambia.” as the approved homepage headline, including its visual emphasis on
+  “cambia”. Avoid direct second-person phrasing, rhetorical questions,
+  motivational formulas, and explanatory constructions such as “significa”
+  when they weaken the positioning. Prefer “servizi”, “soluzioni”, “moduli”,
+  or “componenti” over the English term “capability” in visible copy.
+- Describe platform integration in reader-facing language: prefer “sistemi
+  esistenti” or “sistemi di riferimento” over internal architecture terms such
+  as “sistemi master” when the technical distinction is not essential. In PFM
+  copy, include governed access to ordinary banking information and operations
+  as well as personal financial insight.
 - The Banca Profilo case study may use the official Tinaba themes of bank
   integration, open ecosystem, collaboration, and omnichannel experience.
   Distinguish Tinaba's technology role from Banca Profilo's banking role.
@@ -118,6 +130,11 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
   meantime. GitHub Pages output must remain buildable without a custom-domain
   declaration.
 - Run `npm run build` after content or template changes and inspect the output.
+- When reviewing or changing copy, inspect every generated route at the
+  maximized desktop viewport. Grid children must be shrinkable, headings must
+  remain within their columns, and no text may overlap an adjacent column or
+  create horizontal overflow. Repeat the check after long headline or CTA
+  changes.
 - Run `npm run validate` before committing application changes.
 - Keep the standalone Tinaba link and the grouped navigation links in the
   main header visually consistent: all use a full lime background highlight

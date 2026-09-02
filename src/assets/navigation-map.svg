@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" role="img" aria-labelledby="title desc">
   <title id="title">Architettura completa della navigazione del sito Tinaba</title>
-  <desc id="desc">Mappa a tre livelli della navigazione Tinaba. Il primo livello contiene Cosa facciamo, Soluzioni, Scenari, Tinaba e Parliamone. Il secondo livello contiene le pagine principali. Il terzo livello dettaglia capability, percorsi per tipo di banca, casi d’uso e onboarding.</desc>
+  <desc id="desc">Mappa a tre livelli della navigazione Tinaba. Il primo livello contiene Cosa facciamo, Soluzioni, Scenari, Tinaba e Parliamone. Il secondo livello contiene le pagine principali. Il terzo livello dettaglia servizi, percorsi per tipo di banca, casi d’uso e onboarding.</desc>
   <style>
     text { font-family: Arial, sans-serif; fill: #111111; }
     .mono { font-family: monospace; font-size: 14px; letter-spacing: 1px; }
@@ -25,7 +25,7 @@
   <text x="102" y="424" class="label">La piattaforma</text>
   <text x="102" y="452" class="small">/piattaforma/ · layer digitale per la banca</text>
   <text x="102" y="500" class="label">Soluzioni</text>
-  <text x="102" y="528" class="small">/soluzioni/ · capability modulari</text>
+  <text x="102" y="528" class="small">/soluzioni/ · servizi modulari</text>
   <text x="102" y="576" class="label">Per le banche</text>
   <text x="102" y="604" class="small">/per-le-banche/ · modello di adozione</text>
   <rect x="70" y="742" width="480" height="420" rx="4" fill="#fff75a" stroke="#111111" stroke-width="1"/>

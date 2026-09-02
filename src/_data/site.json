@@ -1,6 +1,6 @@
 {
     "name": "Tinaba",
-    "version": "82",
+    "version": "84",
     "buildDate": "02.09.2026",
     "year": "2026",
     "company": {
@@ -11,24 +11,24 @@
         "capital": "Capitale sociale €105.266 i.v."
     },
     "title": "Technology for the next generation of banking",
-    "description": "Tinaba sviluppa tecnologia fintech per aiutare le banche a costruire il proprio canale digitale.",
+    "description": "Tinaba affianca le banche nell’evoluzione dei propri canali digitali con tecnologia fintech e competenze specialistiche.",
     "navigation": [
         {
             "label": "Cosa facciamo",
             "items": [
-                { "label": "La piattaforma", "description": "Il layer digitale per la banca", "url": "/piattaforma/" },
-                { "label": "Per le banche", "description": "Un modello di adozione governato", "url": "/per-le-banche/" }
+                { "label": "La piattaforma", "description": "Tecnologia per l’evoluzione del canale", "url": "/piattaforma/" },
+                { "label": "Per le banche", "description": "Un modello progressivo e governato", "url": "/per-le-banche/" }
             ]
         },
         {
             "label": "Scenari",
             "items": [
-                { "label": "Casi d’uso", "description": "Esperienze che diventano servizi", "url": "/casi-d-uso/" },
-                { "label": "Banca del territorio", "description": "Onboarding digitale, relazione locale e prossimità", "url": "/scenari/banca-territorio/" },
-                { "label": "Case study Banca Profilo", "description": "Una collaborazione in crescita", "url": "/case-study/" }
+                { "label": "Casi d’uso", "description": "Partnership e servizi nel canale digitale", "url": "/casi-d-uso/" },
+                { "label": "Banca del territorio", "description": "Continuità tra digitale, filiale e relazione", "url": "/scenari/banca-territorio/" },
+                { "label": "Case study Banca Profilo", "description": "Tecnologia e presidio bancario integrati", "url": "/case-study/" }
             ]
         },
-        { "label": "Soluzioni", "description": "Capability modulari, pronte a evolvere", "url": "/soluzioni/" },
+        { "label": "Soluzioni", "description": "Servizi modulari per l’evoluzione digitale", "url": "/soluzioni/" },
         { "label": "Tinaba", "url": "/tinaba/" }
     ]
 }
