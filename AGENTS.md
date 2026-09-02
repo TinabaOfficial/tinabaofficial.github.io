@@ -189,6 +189,10 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
 - The “Il nostro DNA” section on `/tinaba/` is an ordered three-part sequence
   with numbered circular markers, a horizontal connector, and a lime moving
   signal; its article borders must remain disabled to avoid duplicate lines.
+- The `/brand-guidelines/` navigation map is an editorial SVG: all six
+  architecture boxes keep a visible outline, and level-three entries must use
+  distinct vertical positions with enough canvas height to avoid text overlap
+  or clipping.
 
 ## 6. Editorial references supplied for the site
 
