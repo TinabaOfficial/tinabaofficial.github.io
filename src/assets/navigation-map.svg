@@ -31,15 +31,16 @@
   <rect x="70" y="742" width="480" height="420" rx="4" fill="#fff75a" stroke="#111111" stroke-width="1"/>
   <text x="102" y="780" class="mono">LIVELLO 3 · SOLUZIONI</text>
   <text x="102" y="824" class="item">Onboarding digitale · /soluzioni/onboarding/</text>
-  <text x="102" y="856" class="item">Lending digitale · /soluzioni/lending/</text>
-  <text x="102" y="888" class="item">Wallet e pagamenti · #wallet</text>
-  <text x="102" y="920" class="item">Crypto · #crypto</text>
-  <text x="102" y="952" class="item">PFM con AI · #pfm</text>
-  <text x="102" y="984" class="item">Alipay+ · #alipay-plus</text>
-  <text x="102" y="1016" class="item">Risparmio e investimenti · #investimenti</text>
-  <text x="102" y="1048" class="item">Robo advisory · #robo-advisory</text>
-  <text x="102" y="1080" class="item">Denaro condiviso · #condivisione</text>
-  <text x="102" y="1112" class="item">Open ecosystem · #ecosistema</text>
+  <text x="102" y="856" class="item">Wallet e pagamenti · #wallet</text>
+  <text x="102" y="888" class="item">PFM con AI · #pfm</text>
+  <text x="102" y="920" class="item">Alipay+ · #alipay-plus</text>
+  <text x="102" y="952" class="item">Risparmio e investimenti · #investimenti</text>
+  <text x="102" y="984" class="item">Robo advisory · #robo-advisory</text>
+  <text x="102" y="1016" class="item">Denaro condiviso · #condivisione</text>
+  <text x="102" y="1048" class="item">Crypto · #crypto</text>
+  <text x="102" y="1080" class="item">Gestione dei dati aziendali · #dati-aziendali</text>
+  <text x="102" y="1112" class="item">Ecosistema aperto · #ecosistema</text>
+  <text x="102" y="1144" class="item">Lending digitale · /soluzioni/lending/</text>
   <rect x="590" y="332" width="420" height="360" rx="4" fill="#7b61ff" stroke="#111111" stroke-width="1"/>
   <text x="622" y="370" class="mono" fill="#f4f3ee" style="fill:#f4f3ee">LIVELLO 2 · SCENARI</text>
   <text x="622" y="424" class="label" fill="#f4f3ee" style="fill:#f4f3ee">Casi d’uso</text>
