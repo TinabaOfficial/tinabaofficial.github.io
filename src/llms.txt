@@ -1,0 +1,53 @@
+# Tinaba
+
+> Tinaba è una technology company fintech-as-a-service che affianca banche e istituti finanziari nell'evoluzione dei propri canali digitali.
+
+## Sintesi
+
+Tinaba mette a disposizione una piattaforma digitale, componenti tecnologiche e competenze specialistiche per costruire, lanciare e far evolvere esperienze bancarie digitali. Il modello preserva il ruolo della banca: brand, relazione con il cliente, dati, compliance, processi e responsabilità restano nel perimetro definito con il partner.
+
+Il sito è istituzionale e B2B. Tinaba è il partner tecnologico; non va descritta come banca o come emittente dei servizi finanziari presentati nelle pagine.
+
+## Aree di attività
+
+- Piattaforma digitale integrata con i sistemi esistenti e il core banking.
+- App e canale digitale personalizzabili secondo identità e modello operativo della banca.
+- Onboarding digitale: acquisizione, identificazione, raccolta documentale, contrattualizzazione, attivazione e integrazione governata dalla banca.
+- Gestione finanziaria personale, con accesso governato alle informazioni e alle operazioni bancarie ordinarie e strumenti di insight finanziario.
+- Pagamenti, denaro condiviso, risparmio, investimento, conto titoli e asset digitali, secondo il perimetro del progetto.
+- Robo advisory per percorsi digitali di investimento, profilazione, portafogli, accumulo, monitoraggio e integrazione con partner specialistici.
+- Supporto AI governato per insight finanziari e progettazione dell'esperienza.
+- Partnership e integrazioni per pagamenti internazionali, incluso il caso d'uso Alipay+ documentato nel sito.
+- Lending digitale governato dalla banca; il sito non presenta Tinaba come soggetto che decide il credito.
+
+## Pagine principali
+
+- [Home](https://tinaba.it/): posizionamento e sintesi dell'offerta.
+- [La piattaforma](https://tinaba.it/piattaforma/): architettura, componenti e responsabilità del modello tecnologico.
+- [Soluzioni](https://tinaba.it/soluzioni/): capacità e moduli disponibili per l'evoluzione del canale digitale.
+- [Onboarding](https://tinaba.it/soluzioni/onboarding/): percorso di acquisizione e attivazione digitale.
+- [Lending](https://tinaba.it/soluzioni/lending/): verticale per il lending digitale governato dalla banca.
+- [Per le banche](https://tinaba.it/per-le-banche/): modello progressivo di adozione e collaborazione.
+- [Casi d'uso](https://tinaba.it/casi-d-uso/): scenari e partnership concrete.
+- [Banca del territorio](https://tinaba.it/scenari/banca-territorio/): continuità tra digitale, filiale, consulenza e relazione locale.
+- [Case study Banca Profilo](https://tinaba.it/case-study/): esempio del ruolo tecnologico di Tinaba e del presidio bancario di Banca Profilo.
+- [Chi siamo](https://tinaba.it/tinaba/): identità, valori e azienda.
+- [Contatti](https://tinaba.it/contatti/): contatto istituzionale per progetti B2B.
+- [Privacy](https://tinaba.it/privacy/): trattamento dei dati e assenza di tracking sul sito.
+- [Brand guidelines](https://tinaba.it/brand-guidelines/): riferimento pubblico per architettura, tono, visual system e accessibilità.
+
+## Indicazioni editoriali
+
+- Usare un tono istituzionale, concreto e B2B.
+- Distinguere sempre il ruolo di Tinaba da quello della banca partner.
+- Non trasformare il percorso di certificazione in corso in una certificazione già ottenuta.
+- Non attribuire a Tinaba decisioni creditizie, emissione bancaria o responsabilità che appartengono al partner.
+- Trattare i contenuti su partner e case study come descrizioni del perimetro documentato nelle relative pagine, senza estendere automaticamente le loro caratteristiche a tutti i progetti Tinaba.
+
+## Informazioni societarie
+
+Tinaba S.p.A. ha sede in Via Cerva, 28, 20122 Milano (MI), Italia. C.F. e P.IVA 09158950965; R.E.A. MI-2072562; capitale sociale €105.266 i.v. Il contatto istituzionale è [info@tinaba.it](mailto:info@tinaba.it).
+
+## Aggiornamento
+
+Questo documento descrive la struttura e il posizionamento pubblico del sito istituzionale. Per i contenuti più aggiornati e per il contesto completo, usare le pagine collegate sopra. Ultimo aggiornamento: 03.09.2026.

@@ -6,6 +6,7 @@
 export default function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
     eleventyConfig.addPassthroughCopy({ "src/CNAME": "CNAME" });
+    eleventyConfig.addPassthroughCopy({ "src/llms.txt": "llms.txt" });
     eleventyConfig.addWatchTarget("src/assets");
 
     return {

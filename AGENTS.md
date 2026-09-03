@@ -279,6 +279,11 @@ must not be copied into this site without separate approval:
 - The privacy statement is a concise implementation notice, not a substitute
   for a complete legal review. Reconcile it with the actual hosting,
   contact-email processing, and approved corporate details before publication.
+- `src/llms.txt` is the curated public business and information-architecture
+  summary for machine-readable discovery. Keep it separate from this internal
+  runbook: publish only approved public positioning, roles, routes, company
+  details, and editorial safeguards. `robots.txt` and `sitemap.xml` are also
+  generated as root-level discovery artifacts.
 - A passing build proves generation only. Report build, lint, type-check,
   tests, browser/keyboard review, contrast review, and deployment checks as
   separate evidence. The current repository has no Node test files, so
