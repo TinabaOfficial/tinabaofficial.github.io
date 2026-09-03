@@ -5,7 +5,7 @@
 @font-face { font-family: 'DM Mono'; src: url('/assets/fonts/dm-mono-latin-400-normal.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: block; }
 @font-face { font-family: 'DM Mono'; src: url('/assets/fonts/dm-mono-latin-500-normal.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: block; }
 
-:root { --ink: #111111; --paper: #f4f3ee; --lime: #d7ff45; --muted: #696963; --line: rgba(17,17,17,.18); --max: 1200px; }
+:root { --ink: #111111; --paper: #f4f3ee; --lime: #d7ff45; --muted: #5b5b56; --line: rgba(17,17,17,.18); --max: 1200px; }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { margin: 0; color: var(--ink); background: var(--paper); font-family: Manrope, Arial, sans-serif; font-size: 16px; line-height: 1.55; }
