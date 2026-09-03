@@ -156,13 +156,10 @@ h3 { font-size: 1.75rem; line-height: 1.05; letter-spacing: -.06em; }
 .reason-list div { padding-top: 20px; border-top: 1px solid var(--line); }
 .reason-list strong { display: block; margin-bottom: 10px; font-size: 21px; letter-spacing: -.05em; }
 .reason-list p { color: var(--muted); }
-.scenario-grid, .quote-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.scenario-grid article, .quote-grid figure { margin: 0; padding: 26px; border: 1px solid var(--line); background: var(--surface); }
+.scenario-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.scenario-grid article { margin: 0; padding: 26px; border: 1px solid var(--line); background: var(--surface); }
 .scenario-grid h3 { margin: 18px 0 12px; }
 .scenario-grid p { min-height: 92px; color: var(--muted); }
-.quote-grid { grid-template-columns: repeat(2, 1fr); }
-.quote-grid blockquote { margin: 0 0 24px; font-size: clamp(20px, 2.2vw, 29px); line-height: 1.15; letter-spacing: -.04em; }
-.quote-grid figcaption { color: var(--muted); font-family: var(--mono); font-size: 12px; line-height: 1.5; }
 .dna-sequence { --circuit-start: 25px; --circuit-end: calc(100% - 25px); position: relative; }
 .dna-sequence::before { position: absolute; top: 39px; right: 25px; left: 25px; height: 2px; content: ''; background: repeating-linear-gradient(to right, rgba(17,17,17,.28) 0 4px, transparent 4px 11px); z-index: 0; }
 .dna-sequence::after { position: absolute; top: 37px; left: var(--circuit-start); width: 45px; height: 6px; content: ''; background: linear-gradient(to right, transparent, var(--lime) 42%, transparent); filter: drop-shadow(0 0 4px rgba(215,255,69,.9)); animation: circuit-flow-horizontal 3.8s linear infinite; z-index: 0; }
@@ -314,7 +311,7 @@ h3 { font-size: 1.75rem; line-height: 1.05; letter-spacing: -.06em; }
     .split-grid > :first-child, .case-grid > :first-child, .values-grid > :first-child, .contact-grid > :first-child { margin-bottom: 45px; }
     .section-heading { display: block; }
     .section-heading .text-link { display: inline-block; margin-top: 28px; }
-    .feature-grid, .reason-list, .metric-grid, .roadmap-grid, .certification-grid, .solution-grid, .onboarding-flow, .brand-color-grid, .brand-principles, .scenario-grid, .quote-grid { grid-template-columns: 1fr; }
+    .feature-grid, .reason-list, .metric-grid, .roadmap-grid, .certification-grid, .solution-grid, .onboarding-flow, .brand-color-grid, .brand-principles, .scenario-grid { grid-template-columns: 1fr; }
     .feature-card { min-height: 250px; }
     .platform-list article { grid-template-columns: 1fr; gap: 12px; }
     .platform-list { --circuit-start: 42px; --circuit-end: calc(100% - 42px); }
