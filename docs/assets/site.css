@@ -21,7 +21,7 @@ a { color: inherit; text-decoration: none; }
 .wordmark { display: inline-flex; gap: 9px; align-items: center; }
 .site-version { display: inline-flex; align-items: center; align-self: center; height: 29px; color: #8d8d87; font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 400; letter-spacing: .02em; line-height: 1; transform: translateY(3px); }
 .wordmark-icon { display: block; width: 116px; height: 38px; object-fit: contain; }
-.wordmark-footer .wordmark-icon { padding: 4px; background: var(--paper); border-radius: 2px; }
+.wordmark-footer .wordmark-icon { padding: 0; }
 .main-navigation { display: flex; gap: 29px; align-items: center; font-size: 14px; font-weight: 600; }
 .main-navigation .header-tinaba-link, .main-navigation .header-soluzioni-link { padding: 4px 6px; margin: -4px -6px; transition: background-color .2s ease, opacity .2s ease; }
 .nav-group { position: relative; }
