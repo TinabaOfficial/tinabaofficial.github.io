@@ -246,7 +246,7 @@ h3 { font-size: 1.75rem; line-height: 1.05; letter-spacing: -.06em; }
 .brand-swatch-ink p { color: #c8c8bd; }
 .brand-swatch-paper { border: 1px solid var(--line); background: var(--paper); }
 .brand-swatch-lime { background: var(--lime); }
-.brand-swatch-orange { color: var(--paper); background: #FF5E00; }
+.brand-swatch-orange { color: var(--ink); background: #FF5E00; }
 .architecture-tree { display: grid; gap: 24px; margin: 0; padding: 0; list-style: none; }
 .architecture-tree > li { position: relative; padding: 0 0 0 24px; border-left: 4px solid var(--ink); }
 .architecture-tree > li::before { position: absolute; top: 11px; left: -4px; width: 18px; border-top: 4px solid var(--ink); content: ""; }
