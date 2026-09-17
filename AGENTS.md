@@ -239,7 +239,14 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
   distinct vertical positions with enough canvas height to avoid text overlap
   or clipping.
 
-## 6. Editorial references supplied for the site
+## 6. Social preview asset
+
+- Shared page metadata uses the approved local `src/assets/social-cover.png` as
+  the Open Graph and Twitter/X preview image. It is a panoramic adaptation of
+  the cover with the complete headline visible; keep it synchronized with the
+  approved cover artwork and regenerate `docs/` after changes.
+
+## 7. Editorial references supplied for the site
 
 The following public pages were supplied as reference material for the
 institutional content. They are sources of themes and structural inspiration;

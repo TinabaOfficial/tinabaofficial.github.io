@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ title }} — {{ site.name }}</title>
     <meta name="description" content="{{ description or site.description }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Tinaba" />
+    <meta property="og:title" content="{{ title }} — {{ site.name }}" />
+    <meta property="og:description" content="{{ description or site.description }}" />
+    <meta property="og:url" content="https://tinaba.it{{ page.url }}" />
+    <meta property="og:image" content="https://tinaba.it/assets/social-cover.png" />
+    <meta property="og:image:alt" content="La tecnologia per la banca che cambia." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ title }} — {{ site.name }}" />
+    <meta name="twitter:description" content="{{ description or site.description }}" />
+    <meta name="twitter:image" content="https://tinaba.it/assets/social-cover.png" />
+    <meta name="twitter:image:alt" content="La tecnologia per la banca che cambia." />
     <meta name="theme-color" content="#f4f3ee" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <link
