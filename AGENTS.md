@@ -5,7 +5,12 @@
 Static institutional website for Tinaba, a fintech-as-a-service technology
 company enabling banks to build digital channels through a modern core
 banking platform and mobile app. The site is built with Eleventy and publishes
-compiled files to `docs/` for GitHub Pages at `tinaba.it`.
+compiled files to `docs/`, which is deployed on Netlify.
+
+The `staging` branch deploys to
+`https://staging--tinaba-it.netlify.app/` and the `master` branch deploys to
+`https://tinaba-it.netlify.app/`. Public traffic is routed through ProxyPass:
+`https://valid.tinaba.it` for staging and `https://tinaba.it` for production.
 
 ## 2. Standards
 
@@ -131,12 +136,9 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
   list ISO/IEC 27001:2022, ISO/IEC 27017:2015, ISO/IEC 27018:2019, and ISO
   22301:2019 as the intended integrated framework, but must not imply that any
   certification has already been achieved.
-- Do not restore `src/CNAME` or generate `docs/CNAME` until publication on the
-  custom domain is explicitly approved. The Eleventy configuration may retain
-  an optional passthrough declaration, but the source file must remain absent
-  and every build must confirm that `docs/CNAME` is not emitted in the
-  meantime. GitHub Pages output must remain buildable without a custom-domain
-  declaration.
+- Do not add `src/CNAME` or generate `docs/CNAME`: custom-domain traffic is
+  routed through ProxyPass for the Netlify deployments, so a GitHub Pages
+  custom-domain declaration is not part of this project.
 - Run `npm run build` after content or template changes and inspect the output.
 - When reviewing or changing copy, inspect every generated route at the
   maximized desktop viewport. Grid children must be shrinkable, headings must
@@ -180,7 +182,7 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
 - `src/assets/`: CSS, JavaScript, and static assets.
 - `src/*.njk`: institutional pages and landing content.
 - `src/privacy.njk`: privacy, no-tracking, and accessibility information.
-- `docs/`: generated GitHub Pages output.
+- `docs/`: generated static output deployed on Netlify.
 
 ## 5. Information architecture decisions
 
