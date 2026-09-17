@@ -31,7 +31,7 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
 - Keep the privacy page current. It must describe the absence of tracking and
   identify any hosting or contact-data processing that applies. Legal details
   must match the current approved Tinaba corporate information before
-  publication.
+  publication. The published DPO contact is `dpo@tinaba.it`.
 - Keep the footer corporate block synchronized with `src/_data/site.json` and
   the approved company details used in the privacy page.
 - Treat the footer value as a progressive site build number. Before completing
@@ -55,6 +55,11 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
   motivational formulas, and explanatory constructions such as “significa”
   when they weaken the positioning. Prefer “servizi”, “soluzioni”, “moduli”,
   or “componenti” over the English term “capability” in visible copy.
+- The shared header must include a discreet one-line bridge for visitors
+  arriving from the former tinaba.it redirect: state that the Tinaba di Banca
+  Profilo site is at `https://tinaba.bancaprofilo.it/`, with the address itself
+  clickable, without implying that the institutional site is the consumer
+  product site.
 - Describe platform integration in reader-facing language: prefer “sistemi
   esistenti” or “sistemi di riferimento” over internal architecture terms such
   as “sistemi master” when the technical distinction is not essential. In PFM
