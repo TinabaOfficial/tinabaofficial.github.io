@@ -309,3 +309,8 @@ must not be copied into this site without separate approval:
   `docs/`, verify that no `CNAME` was introduced, and check for external
   runtime requests, tracking, broken internal routes, heading errors, and
   unintended generated-file differences.
+- Solution cards on dark surfaces must override the light-surface
+  `.feature-number` color with the accessible light tone used by other dark
+  components.
+- Section kickers on dark surfaces must use the same accessible light tone;
+  they must not inherit the muted light-surface color.

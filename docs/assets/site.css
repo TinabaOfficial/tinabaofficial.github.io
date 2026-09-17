@@ -77,7 +77,7 @@ h3 { font-size: 1.75rem; line-height: 1.05; letter-spacing: -.06em; }
 .section-accent { background: var(--lime); }
 .section-dark { color: var(--paper); background: var(--ink); }
 .case-banner { color: var(--paper); background: #252525; }
-.section-dark .eyebrow, .case-banner .eyebrow, .feature-card-dark .feature-number { color: #c8c8bd; }
+.section-dark .eyebrow, .section-dark .section-kicker, .case-banner .eyebrow, .feature-card-dark .feature-number, .solution-card-dark .feature-number { color: #c8c8bd; }
 .section-dark .hero-lead, .case-banner .hero-lead { color: #d7d7cf; }
 .section-dark h1 em { color: var(--lime); }
 .section-dark .button:not(.button-light):not(.button-dark) { color: var(--ink); }
