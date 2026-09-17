@@ -241,10 +241,11 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
 
 ## 6. Social preview asset
 
-- Shared page metadata uses the approved local `src/assets/social-cover.png` as
-  the Open Graph and Twitter/X preview image. It is a panoramic adaptation of
-  the cover with the complete headline visible; keep it synchronized with the
-  approved cover artwork and regenerate `docs/` after changes.
+- Shared page metadata uses the approved local `src/assets/social-cover-square.png`
+  as the Open Graph and Twitter/X preview image. It is a square adaptation of
+  the cover for clients such as Slack, with the complete headline visible; keep
+  it synchronized with the approved cover artwork and regenerate `docs/` after
+  changes.
 
 ## 7. Editorial references supplied for the site
 
