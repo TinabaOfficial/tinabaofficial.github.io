@@ -14,6 +14,9 @@ compiled files to `docs/` for GitHub Pages at `tinaba.it`.
 - Use `#FF5E00` as the canonical orange across the visual system, brand
   guidelines, diagrams, and illustrative assets.
 - Keep content in `src/`; never edit generated files under `docs/` directly.
+- Apply HTML formatting only to the Nunjucks templates and other source files
+  under `src/`. Regenerate `docs/` with `npm run build`; do not run a formatter
+  or make manual edits directly on the generated HTML, XML, or text output.
 - Use Eleventy templates and Markdown for pages, semantic HTML, responsive CSS,
   and small vanilla ESM scripts only where interaction is necessary.
 - Accessibility is a release requirement: use semantic landmarks, a logical

@@ -1,82 +1,151 @@
 <!doctype html>
 <html lang="it">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ title }} — {{ site.name }}</title>
-    <meta name="description" content="{{ description or site.description }}">
-    <meta name="theme-color" content="#f4f3ee">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-    <link rel="preload" href="/assets/fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="/assets/fonts/manrope-latin-700-normal.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="/assets/fonts/dm-mono-latin-400-normal.woff2" as="font" type="font/woff2">
-    <link rel="icon" href="/assets/favicon.png" type="image/png">
-    <link rel="stylesheet" href="/assets/site.css">
+    <meta name="description" content="{{ description or site.description }}" />
+    <meta name="theme-color" content="#f4f3ee" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link
+      rel="preload"
+      href="/assets/fonts/manrope-latin-400-normal.woff2"
+      as="font"
+      type="font/woff2"
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/manrope-latin-700-normal.woff2"
+      as="font"
+      type="font/woff2"
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/dm-mono-latin-400-normal.woff2"
+      as="font"
+      type="font/woff2"
+    />
+    <link rel="icon" href="/assets/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="/assets/site.css" />
     <script type="module" src="/assets/site.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <a class="skip-link" href="#main-content">Vai al contenuto</a>
     <header class="site-header">
-        <div class="container header-inner">
-            <a class="wordmark" href="/" aria-label="Tinaba, home">
-                <img class="wordmark-icon" src="/assets/tinaba-logo.png" alt="">
-            </a>
-            <div class="header-bridge" aria-label="Informazione sul sito Tinaba di Banca Profilo">
-                <p>Il sito dedicato a Tinaba di Banca Profilo è su <a href="https://tinaba.bancaprofilo.it/" target="_blank" rel="noopener noreferrer">tinaba.bancaprofilo.it</a>.</p>
-            </div>
-            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">Menu</button>
-            <nav id="main-navigation" class="main-navigation" aria-label="Navigazione principale">
-                {% for item in site.navigation %}
-                    {% if item.items %}
-                        <details class="nav-group">
-                            <summary>{{ item.label }} <span aria-hidden="true">⌄</span></summary>
-                            <div class="nav-panel">
-                                {% for child in item.items %}
-                                    <a class="nav-panel-link" href="{{ child.url }}"><strong>{{ child.label }}</strong><small>{{ child.description }}</small></a>
-                                {% endfor %}
-                            </div>
-                        </details>
-                    {% else %}
-                    <a class="{% if item.label == 'Tinaba' %}header-tinaba-link{% elif item.label == 'Soluzioni' %}header-soluzioni-link{% endif %}" href="{{ item.url }}">{{ item.label }}</a>
-                    {% endif %}
-                {% endfor %}
-                <a class="button button-small" href="/contatti/">Definiamo il progetto <span aria-hidden="true">↗</span></a>
-            </nav>
+      <div class="container header-inner">
+        <a class="wordmark" href="/" aria-label="Tinaba, home">
+          <img class="wordmark-icon" src="/assets/tinaba-logo.png" alt="" />
+        </a>
+        <div
+          class="header-bridge"
+          aria-label="Informazione sul sito Tinaba di Banca Profilo"
+        >
+          <p>
+            Il sito dedicato a Tinaba di Banca Profilo è su
+            <a
+              href="https://tinaba.bancaprofilo.it/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >tinaba.bancaprofilo.it</a
+            >.
+          </p>
         </div>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="main-navigation"
+        >
+          Menu
+        </button>
+        <nav
+          id="main-navigation"
+          class="main-navigation"
+          aria-label="Navigazione principale"
+        >
+          {% for item in site.navigation -%}
+          {% if item.items -%}
+          <details class="nav-group">
+            <summary>
+              {{ item.label }}
+              <span aria-hidden="true">⌄</span>
+            </summary>
+            <div class="nav-panel">
+              {% for child in item.items -%}
+              <a class="nav-panel-link" href="{{ child.url }}">
+                <strong>{{ child.label }}</strong>
+                <small>{{ child.description }}</small>
+              </a>
+              {%- endfor %}
+            </div>
+          </details>
+          {%- else -%}
+          <a
+            class="{% if item.label == 'Tinaba' %}header-tinaba-link{% elif item.label == 'Soluzioni' %}header-soluzioni-link{% endif %}"
+            href="{{ item.url }}"
+          >
+            {{ item.label }}
+          </a>
+          {%- endif %}
+          {%- endfor %}
+          <a class="button button-small" href="/contatti/">
+            Definiamo il progetto
+            <span aria-hidden="true">↗</span>
+          </a>
+        </nav>
+      </div>
     </header>
     <main id="main-content">{{ content | safe }}</main>
     <footer class="site-footer">
-        <div class="container footer-grid">
-            <div>
-                <a class="wordmark wordmark-footer" href="/" aria-label="Tinaba, home"><img class="wordmark-icon" src="/assets/tinaba-logo-footer.png" alt=""><span class="site-version" aria-label="Build {{ site.version }} del {{ site.buildDate }}">v{{ site.version }} · {{ site.buildDate }}</span></a>
-                <p class="footer-note">Technology for the next generation of banking.</p>
-            </div>
-            <nav class="footer-link-groups" aria-label="Navigazione del footer">
-                <div class="footer-links">
-                    <p class="footer-heading">Cosa facciamo</p>
-                    <a href="/piattaforma/">La piattaforma</a>
-                    <a href="/soluzioni/">Soluzioni</a>
-                    <a href="/per-le-banche/">Per le banche</a>
-                </div>
-                <div class="footer-links">
-                    <p class="footer-heading">Scenari e azienda</p>
-                    <a href="/casi-d-uso/">Casi d’uso</a>
-                    <a href="/case-study/">Case study</a>
-                    <a href="/tinaba/">Chi siamo</a>
-                    <a href="/contatti/">Contatti</a>
-                    <a href="/privacy/">Privacy</a>
-                    <a href="/brand-guidelines/">Brand guidelines</a>
-                </div>
-            </nav>
-            <div class="footer-meta">
-                <span>{{ site.company.name }}</span>
-                <span>{{ site.company.address }}</span>
-                <span>{{ site.company.taxId }}</span>
-                <span>{{ site.company.rea }}</span>
-                <span>{{ site.company.capital }}</span>
-                <span>© {{ site.year }} Tinaba</span>
-            </div>
+      <div class="container footer-grid">
+        <div>
+          <a
+            class="wordmark wordmark-footer"
+            href="/"
+            aria-label="Tinaba, home"
+          >
+            <img
+              class="wordmark-icon"
+              src="/assets/tinaba-logo-footer.png"
+              alt=""
+            />
+            <span
+              class="site-version"
+              aria-label="Build {{ site.version }} del {{ site.buildDate }}"
+            >
+              v{{ site.version }} · {{ site.buildDate }}
+            </span>
+          </a>
+          <p class="footer-note">
+            Technology for the next generation of banking.
+          </p>
         </div>
+        <nav class="footer-link-groups" aria-label="Navigazione del footer">
+          <div class="footer-links">
+            <p class="footer-heading">Cosa facciamo</p>
+            <a href="/piattaforma/">La piattaforma</a>
+            <a href="/soluzioni/">Soluzioni</a>
+            <a href="/per-le-banche/">Per le banche</a>
+          </div>
+          <div class="footer-links">
+            <p class="footer-heading">Scenari e azienda</p>
+            <a href="/casi-d-uso/">Casi d’uso</a>
+            <a href="/case-study/">Case study</a>
+            <a href="/tinaba/">Chi siamo</a>
+            <a href="/contatti/">Contatti</a>
+            <a href="/privacy/">Privacy</a>
+            <a href="/brand-guidelines/">Brand guidelines</a>
+          </div>
+        </nav>
+        <div class="footer-meta">
+          <span>{{ site.company.name }}</span>
+          <span>{{ site.company.address }}</span>
+          <span>{{ site.company.taxId }}</span>
+          <span>{{ site.company.rea }}</span>
+          <span>{{ site.company.capital }}</span>
+          <span>© {{ site.year }} Tinaba</span>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
