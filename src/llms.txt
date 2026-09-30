@@ -13,6 +13,7 @@ Il sito è istituzionale e B2B. Tinaba è il partner tecnologico; non va descrit
 - Piattaforma digitale integrata con i sistemi esistenti e il core banking.
 - App e canale digitale personalizzabili secondo identità e modello operativo della banca.
 - Onboarding digitale: acquisizione, identificazione, raccolta documentale, contrattualizzazione, attivazione e integrazione governata dalla banca.
+- ChatTI: assistente AI per interrogare i dati aziendali in linguaggio naturale e supportare strategie commerciali, campagne marketing e sviluppo di nuovi prodotti, con fonti e accessi nel perimetro dell'organizzazione.
 - Gestione finanziaria personale, con accesso governato alle informazioni e alle operazioni bancarie ordinarie e strumenti di insight finanziario.
 - Pagamenti, denaro condiviso, risparmio, investimento, conto titoli e asset digitali, secondo il perimetro del progetto.
 - Robo advisory per percorsi digitali di investimento, profilazione, portafogli, accumulo, monitoraggio e integrazione con partner specialistici.
@@ -27,6 +28,7 @@ Il sito è istituzionale e B2B. Tinaba è il partner tecnologico; non va descrit
 - [Soluzioni](https://tinaba.it/soluzioni/): capacità e moduli disponibili per l'evoluzione del canale digitale.
 - [Onboarding](https://tinaba.it/soluzioni/onboarding/): percorso di acquisizione e attivazione digitale.
 - [Lending](https://tinaba.it/soluzioni/lending/): verticale per il lending digitale governato dalla banca.
+- [ChatTI](https://tinaba.it/soluzioni/chat-ti/): dati aziendali e AI a supporto di strategie commerciali, marketing e sviluppo di prodotto.
 - [Per le banche](https://tinaba.it/per-le-banche/): modello progressivo di adozione e collaborazione.
 - [Casi d'uso](https://tinaba.it/casi-d-uso/): scenari e partnership concrete.
 - [Banca del territorio](https://tinaba.it/scenari/banca-territorio/): continuità tra digitale, filiale, consulenza e relazione locale.
@@ -50,4 +52,4 @@ Tinaba S.p.A. ha sede in Via Cerva, 28, 20122 Milano (MI), Italia. C.F. e P.IVA 
 
 ## Aggiornamento
 
-Questo documento descrive la struttura e il posizionamento pubblico del sito istituzionale. Per i contenuti più aggiornati e per il contesto completo, usare le pagine collegate sopra. Ultimo aggiornamento: 03.09.2026.
+Questo documento descrive la struttura e il posizionamento pubblico del sito istituzionale. Per i contenuti più aggiornati e per il contesto completo, usare le pagine collegate sopra. Ultimo aggiornamento: 30.09.2026.

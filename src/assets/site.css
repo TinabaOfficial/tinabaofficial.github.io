@@ -50,6 +50,12 @@ a { color: inherit; text-decoration: none; }
 .hero { min-height: 630px; padding: 85px 0 100px; }
 .hero-home { background: var(--paper); }
 .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+.home-announcement { display: inline-flex; max-width: 100%; align-items: center; gap: 11px; padding: 7px 12px 7px 7px; border: 1px solid rgba(17,17,17,.18); background: rgba(255,255,255,.68); font-size: 13px; font-weight: 700; transition: transform .2s ease, border-color .2s ease; }
+.home-announcement:hover { border-color: var(--ink); transform: translateY(-2px); }
+.home-announcement-badge { flex: 0 0 auto; padding: 5px 8px; color: var(--ink); background: var(--lime); font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
+.home-announcement-title { min-width: 0; }
+.home-announcement-arrow { flex: 0 0 auto; margin-left: 5px; }
 .eyebrow, .section-kicker, .feature-number, .platform-list article > span, .metric-grid strong { margin: 0 0 25px; color: var(--muted); font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
 .section-light .section-kicker { color: #484842; }
 h1, h2, h3, p { margin-top: 0; }
@@ -82,6 +88,32 @@ h3 { font-size: 1.75rem; line-height: 1.05; letter-spacing: -.06em; }
 .section-dark h1 em { color: var(--lime); }
 .section-dark .button:not(.button-light):not(.button-dark) { color: var(--ink); }
 .section-dark .reason-list p { color: #c8c8bd; }
+.chat-ti-hero-meta { display: flex; align-items: center; gap: 13px; margin-bottom: 25px; }
+.chat-ti-hero-meta .eyebrow { margin: 0; }
+.hero-news-badge { padding: 5px 9px; color: var(--ink); background: var(--lime); font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: .08em; line-height: 1.2; text-transform: uppercase; }
+.chat-demo-section { position: relative; overflow: hidden; background: radial-gradient(ellipse at 82% 14%, rgba(215,255,69,.1), transparent 40%), var(--ink); }
+.chat-demo-layout { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 64px; align-items: center; }
+.chat-demo-intro, .chat-demo-panel { min-width: 0; }
+.chat-demo-intro h2 { max-width: 530px; }
+.chat-demo-intro .large-copy { color: #d7d7cf; }
+.chat-demo-panel { padding: 26px; border: 1px solid rgba(244,243,238,.22); background: rgba(244,243,238,.055); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); }
+.chat-demo-header { display: flex; min-width: 0; align-items: center; gap: 12px; padding-bottom: 20px; border-bottom: 1px solid rgba(244,243,238,.18); }
+.chat-demo-mark { display: grid; width: 38px; height: 38px; flex: 0 0 auto; place-items: center; color: var(--ink); background: var(--lime); border-radius: 50%; font-family: 'DM Mono', monospace; font-size: 12px; font-weight: 500; }
+.chat-demo-header > div { display: grid; min-width: 0; gap: 2px; }
+.chat-demo-header strong { font-size: 14px; }
+.chat-demo-header > div > span { color: #c8c8bd; font-size: 11px; }
+.chat-demo-status { margin-left: auto; padding: 4px 8px; color: #e0e0d8; border: 1px solid rgba(244,243,238,.24); font-family: 'DM Mono', monospace; font-size: 10px; text-transform: uppercase; }
+.chat-demo-thread { display: grid; gap: 14px; padding: 22px 0; }
+.chat-message { min-width: 0; max-width: 92%; padding: 15px 17px; overflow-wrap: anywhere; }
+.chat-message > span { display: block; margin-bottom: 7px; font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: .06em; text-transform: uppercase; }
+.chat-message p { margin: 0; font-size: 14px; line-height: 1.5; }
+.chat-message-user { justify-self: end; color: var(--ink); background: var(--lime); }
+.chat-message-user > span { color: #354200; }
+.chat-message-assistant { justify-self: start; border: 1px solid rgba(244,243,238,.16); background: rgba(244,243,238,.07); }
+.chat-message-assistant > span { color: #d7ff45; }
+.chat-message-assistant ul { display: grid; gap: 5px; margin: 10px 0 0; padding-left: 18px; color: #e5e5df; font-size: 13px; }
+.chat-message-assistant li strong { color: var(--lime); font-family: 'DM Mono', monospace; font-weight: 500; }
+.chat-demo-note { margin: 0; color: #c8c8bd; font-size: 11px; line-height: 1.45; }
 .split-grid, .values-grid, .contact-grid { display: grid; grid-template-columns: minmax(180px, .8fr) 2fr; gap: 70px; }
 .case-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 70px; }
 .case-grid > * { min-width: 0; }
@@ -196,6 +228,9 @@ h3 { font-size: 1.75rem; line-height: 1.05; letter-spacing: -.06em; }
 .certification-note { max-width: 900px; margin: 35px 0 0; color: var(--muted); font-size: 13px; }
 .solution-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
 .solution-card { min-height: 365px; padding: 30px; border: 1px solid var(--line); }
+.solution-card-meta { display: flex; min-width: 0; align-items: center; justify-content: space-between; gap: 12px; }
+.solution-card-meta .feature-number { min-width: 0; margin: 0; }
+.solution-news-badge { flex: 0 0 auto; padding: 5px 8px; color: var(--lime); background: var(--ink); font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: .06em; text-transform: uppercase; }
 .solution-card h3 { max-width: 360px; margin: 70px 0 18px; font-size: clamp(2rem, 3vw, 3rem); }
 .solution-card p { max-width: 450px; color: var(--muted); font-size: 17px; }
 .solution-card ul { display: grid; gap: 7px; margin: 25px 0 0; padding-left: 18px; color: var(--muted); font-size: 14px; }
@@ -312,6 +347,10 @@ h3 { font-size: 1.75rem; line-height: 1.05; letter-spacing: -.06em; }
     h1 { font-size: clamp(3.2rem, 16vw, 5.2rem); }
     h2 { font-size: clamp(2.4rem, 11vw, 3.5rem); }
     .section, .page-hero { padding: 75px 0; }
+    .chat-demo-layout { display: block; }
+    .chat-demo-intro { margin-bottom: 45px; }
+    .chat-demo-panel { padding: 18px; }
+    .chat-message { max-width: 100%; }
     .split-grid, .case-grid, .values-grid, .contact-grid { display: block; }
     .legal-content { display: block; }
     .legal-content > :first-child { margin-bottom: 45px; }
