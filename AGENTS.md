@@ -165,6 +165,11 @@ The `staging` branch deploys to
   Keep lending copy separate from credit decisions and keep territorial-bank
   copy centered on continuity between digital onboarding, branches, advice,
   and local relationship.
+- The ChatTI conversation on `/soluzioni/chat-ti/` is a static illustration of
+  a ChatGPT session. Keep the interface visually faithful and generic; explain
+  ChatTI and the Tinaba plugin in the surrounding page copy rather than inside
+  the illustrated interface. Do not add a live chat, external assets, or real
+  business data to the illustration.
 - The lending capability card on `/soluzioni/` must link directly to its
   dedicated lending vertical.
 - Dark onboarding flows must override the light-surface circuit colors so

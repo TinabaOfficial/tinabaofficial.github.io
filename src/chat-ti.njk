@@ -104,54 +104,84 @@ permalink: /soluzioni/chat-ti/
         esplorano le evidenze, verificano le ipotesi e scelgono come agire.
       </p>
     </div>
-    <div class="chat-demo-panel" aria-label="Conversazione dimostrativa">
-      <div class="chat-demo-header">
-        <span class="chat-demo-mark" aria-hidden="true">TI</span>
-        <div>
-          <strong>ChatTI</strong>
-          <span>Assistente dati aziendali</span>
+    <div
+      class="chatgpt-mock"
+      role="region"
+      aria-label="Conversazione in ChatGPT"
+    >
+      <aside class="chatgpt-sidebar" aria-label="Navigazione della sessione">
+        <div class="chatgpt-brand">
+          <strong>ChatGPT</strong>
         </div>
-      </div>
-      <div class="chat-demo-thread">
-        <div class="chat-message chat-message-user">
-          <span>Domanda</span>
-          <p>
-            Suggeriscimi le migliori azioni di marketing e di prodotto, con un
-            dettaglio dei costi e dei benefici attesi.
-          </p>
+        <div class="chatgpt-new-chat">
+          <span aria-hidden="true">＋</span> Nuova chat
         </div>
-        <div class="chat-message chat-message-assistant">
-          <span>ChatTI · Analisi</span>
-          <p>
-            Le direttrici di prodotto e marketing con maggiore potenziale sono
-            … I costi e i benefici attesi …
-          </p>
+        <nav class="chatgpt-nav" aria-label="Menu ChatGPT">
+          <div class="chatgpt-nav-link"><span aria-hidden="true">▤</span>Libreria</div>
+          <div class="chatgpt-nav-link"><span aria-hidden="true">▦</span>Progetti</div>
+          <div class="chatgpt-nav-link"><span aria-hidden="true">◷</span>Pianificati</div>
+          <div class="chatgpt-nav-link"><span aria-hidden="true">···</span>Altro</div>
+        </nav>
+        <p class="chatgpt-sidebar-label">Recenti</p>
+        <div class="chatgpt-history-item chatgpt-history-active">
+          Azioni di marketing e prodotto
         </div>
-        <div class="chat-message chat-message-user">
-          <span>Domanda</span>
-          <p>Integra anche fonti esterne credibili e istituzionali.</p>
+        <div class="chatgpt-history-item">Fonti istituzionali</div>
+        <div class="chatgpt-history-item">Strategie a breve e medio termine</div>
+      </aside>
+      <div class="chatgpt-main">
+        <div class="chatgpt-thread">
+          <div class="chatgpt-turn chatgpt-turn-user">
+            <p>
+              Suggeriscimi le migliori azioni di marketing e di prodotto, con un
+              dettaglio dei costi e dei benefici attesi.
+            </p>
+          </div>
+          <div class="chatgpt-turn chatgpt-turn-assistant">
+            <p>
+              Le direttrici di prodotto e marketing con maggiore potenziale
+              sono … I costi e i benefici attesi …
+            </p>
+            <div class="chatgpt-message-actions" aria-hidden="true">
+              <span>▢</span><span>♧</span><span>↻</span><span>···</span>
+            </div>
+          </div>
+          <div class="chatgpt-turn chatgpt-turn-user">
+            <p>Integra anche fonti esterne credibili e istituzionali.</p>
+          </div>
+          <div class="chatgpt-turn chatgpt-turn-assistant">
+            <p>
+              Le fonti istituzionali aiutano a contestualizzare le opportunità
+              e a verificare le ipotesi …
+            </p>
+            <div class="chatgpt-message-actions" aria-hidden="true">
+              <span>▢</span><span>♧</span><span>↻</span><span>···</span>
+            </div>
+          </div>
+          <div class="chatgpt-turn chatgpt-turn-user">
+            <p>
+              Sulla base delle best practice dei concorrenti, individua le
+              migliori strategie di marketing per il breve e medio periodo e
+              indica i risultati prevedibili per ciascuna.
+            </p>
+          </div>
+          <div class="chatgpt-turn chatgpt-turn-assistant">
+            <p>
+              Le strategie per il breve e il medio periodo possono essere
+              organizzate per priorità … I risultati prevedibili dipendono
+              da …
+            </p>
+            <div class="chatgpt-message-actions" aria-hidden="true">
+              <span>▢</span><span>♧</span><span>↻</span><span>···</span>
+            </div>
+          </div>
         </div>
-        <div class="chat-message chat-message-assistant">
-          <span>ChatTI · Fonti</span>
-          <p>
-            Le fonti istituzionali aiutano a contestualizzare le opportunità e
-            a verificare le ipotesi …
-          </p>
-        </div>
-        <div class="chat-message chat-message-user">
-          <span>Domanda</span>
-          <p>
-            Sulla base delle best practice dei concorrenti, individua le
-            migliori strategie di marketing per il breve e medio periodo e
-            indica i risultati prevedibili per ciascuna.
-          </p>
-        </div>
-        <div class="chat-message chat-message-assistant">
-          <span>ChatTI · Benchmark</span>
-          <p>
-            Le strategie per il breve e il medio periodo possono essere
-            organizzate per priorità … I risultati prevedibili dipendono da …
-          </p>
+        <div class="chatgpt-orb" aria-hidden="true"></div>
+        <div class="chatgpt-composer" aria-hidden="true">
+          <span class="chatgpt-composer-add">＋</span>
+          <span class="chatgpt-composer-placeholder">Chiedi qualsiasi cosa</span>
+          <span class="chatgpt-composer-tools">♬</span>
+          <span class="chatgpt-send">↑</span>
         </div>
       </div>
     </div>
