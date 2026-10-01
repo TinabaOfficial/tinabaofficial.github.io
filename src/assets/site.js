@@ -1,3 +1,25 @@
+/** @type {HTMLElement | null} */
+const siteVersionBadge = document.querySelector("[data-site-version]");
+
+if (siteVersionBadge) {
+    fetch("/assets/site-version.json", { cache: "no-store" })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Site version could not be loaded.");
+            }
+
+            return response.json();
+        })
+        .then(({ version, buildDate }) => {
+            siteVersionBadge.textContent = `v${version} · ${buildDate}`;
+            siteVersionBadge.setAttribute("aria-label", `Build ${version} del ${buildDate}`);
+            siteVersionBadge.hidden = false;
+        })
+        .catch(() => {
+            siteVersionBadge.remove();
+        });
+}
+
 const menuToggle = document.querySelector(".menu-toggle");
 const navigation = document.querySelector(".main-navigation");
 const siteHeader = document.querySelector(".site-header");
