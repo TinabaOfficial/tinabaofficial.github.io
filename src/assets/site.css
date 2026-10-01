@@ -96,7 +96,9 @@ h3 { font-size: 1.75rem; line-height: 1.05; letter-spacing: -.06em; }
 .chat-demo-intro { max-width: 780px; margin: 0 auto 48px; text-align: center; }
 .chat-demo-intro h2 { max-width: 700px; margin-right: auto; margin-left: auto; }
 .chat-demo-intro .large-copy { margin-right: auto; margin-left: auto; color: #d7d7cf; }
+.chatgpt-figure { width: min(100%, 1100px); margin: 0 auto; }
 .chatgpt-mock { display: grid; width: min(100%, 1100px); min-width: 0; grid-template-columns: 220px minmax(0, 1fr); margin: 0 auto; overflow: hidden; color: #1f1f1f; background: #fff; border: 1px solid rgba(244,243,238,.2); border-radius: 16px; box-shadow: 0 28px 70px rgba(0,0,0,.3); }
+.chatgpt-caption { margin: 15px 0 0; color: #d7d7cf; font-size: 12px; line-height: 1.5; text-align: center; }
 .chatgpt-sidebar { display: flex; min-width: 0; min-height: 680px; flex-direction: column; padding: 17px 12px; background: #f7f7f8; border-right: 1px solid #e7e7e8; }
 .chatgpt-brand { display: flex; align-items: center; padding: 2px 9px 22px; font-size: 14px; }
 .chatgpt-new-chat { display: flex; align-items: center; gap: 9px; padding: 9px; border-radius: 8px; font-size: 12px; }
