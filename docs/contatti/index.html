@@ -122,9 +122,18 @@
             <span aria-hidden="true">↗</span>
           </a>
         </nav>
+        <button
+          class="search-toggle"
+          type="button"
+          aria-haspopup="dialog"
+          aria-controls="site-search"
+          aria-label="Cerca nel sito, scorciatoia Ctrl o Comando più K"
+        >
+          Cerca <kbd aria-hidden="true">Ctrl/⌘ K</kbd>
+        </button>
       </div>
     </header>
-    <main id="main-content">
+    <main id="main-content" data-pagefind-body>
 <section class="page-hero section-accent">
   <div class="container narrow">
     <p class="eyebrow">Contatti</p>
@@ -201,5 +210,30 @@
         </div>
       </div>
     </footer>
+    <dialog
+      id="site-search"
+      class="search-dialog"
+      aria-labelledby="search-title"
+    >
+      <div class="search-dialog-header">
+        <h2 id="search-title">Cerca nel sito</h2>
+        <button class="search-close" type="button" aria-label="Chiudi ricerca">
+          Chiudi <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <label class="search-label" for="site-search-input">Cosa stai cercando?</label>
+      <input
+        id="site-search-input"
+        class="search-input"
+        type="search"
+        autocomplete="off"
+        placeholder="Scrivi una parola o una frase"
+        aria-describedby="search-status"
+      />
+      <p id="search-status" class="search-status" role="status" aria-live="polite">
+        Digita per cercare tra i contenuti del sito.
+      </p>
+      <ol class="search-results" aria-label="Risultati della ricerca"></ol>
+    </dialog>
   </body>
 </html>
