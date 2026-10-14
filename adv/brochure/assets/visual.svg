@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="45 0 1110 670" role="img" aria-label="Piattaforma Tinaba FaaS al centro di banca, app, servizi e ChatTI">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#FF5E00" stop-opacity=".23"/>
+      <stop offset="1" stop-color="#FF5E00" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FF5E00"/><stop offset="1" stop-color="#D6FF55"/>
+    </linearGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="25"/>
+    </filter>
+  </defs>
+  <ellipse cx="574" cy="330" rx="320" ry="320" fill="url(#glow)" filter="url(#soft)"/>
+  <ellipse cx="574" cy="330" rx="260" ry="300" fill="none" stroke="#FFFFFF" stroke-opacity=".12" stroke-width="1.5" stroke-dasharray="3 13"/>
+  <ellipse cx="574" cy="330" rx="188" ry="225" fill="none" stroke="#FFFFFF" stroke-opacity=".13" stroke-width="1.5"/>
+  <path d="M205 110 C345 50 454 88 523 165" fill="none" stroke="url(#line)" stroke-width="3" stroke-dasharray="2 13" stroke-linecap="round"/>
+  <path d="M700 175 C797 95 890 86 1000 158" fill="none" stroke="#B995FF" stroke-width="3" stroke-dasharray="2 13" stroke-linecap="round"/>
+  <path d="M704 490 C811 550 913 540 1021 500" fill="none" stroke="#D6FF55" stroke-width="3" stroke-dasharray="2 13" stroke-linecap="round"/>
+  <path d="M440 490 C359 560 278 565 181 520" fill="none" stroke="#FF5E00" stroke-width="3" stroke-dasharray="2 13" stroke-linecap="round"/>
+  <circle cx="574" cy="330" r="116" fill="#17171D" stroke="#FF5E00" stroke-width="2"/>
+  <circle cx="574" cy="330" r="102" fill="none" stroke="#FF5E00" stroke-opacity=".28" stroke-width="1"/>
+  <path d="M544 321h60M544 340h38" stroke="#FF5E00" stroke-width="5" stroke-linecap="round"/>
+  <text x="574" y="284" text-anchor="middle" fill="#AEB0BB" font-family="Manrope" font-size="15" font-weight="700" letter-spacing="3">TINABA</text>
+  <text x="574" y="380" text-anchor="middle" fill="#FFFFFF" font-family="Manrope" font-size="24" font-weight="700">FaaS</text>
+  <g transform="translate(71 55)">
+    <rect width="216" height="100" rx="23" fill="#F4F2EE"/>
+    <circle cx="39" cy="50" r="18" fill="#FF5E00"/>
+    <path d="M31 50h16M39 42v16" stroke="#17171D" stroke-width="3" stroke-linecap="round"/>
+    <text x="70" y="56" fill="#17171D" font-family="Arial" font-size="16" font-weight="700">Sistemi</text>
+  </g>
+  <g transform="translate(897 88)">
+    <rect width="211" height="100" rx="23" fill="#D6FF55"/>
+    <rect x="23" y="25" width="31" height="50" rx="7" fill="none" stroke="#17171D" stroke-width="3"/>
+    <circle cx="38.5" cy="66" r="2" fill="#17171D"/>
+    <text x="70" y="56" fill="#17171D" font-family="Arial" font-size="16" font-weight="700">App e canali</text>
+  </g>
+  <g transform="translate(928 478)">
+    <rect width="211" height="100" rx="23" fill="#B995FF"/>
+    <circle cx="39" cy="50" r="19" fill="none" stroke="#17171D" stroke-width="3"/>
+    <circle cx="33" cy="47" r="2.5" fill="#17171D"/><circle cx="45" cy="47" r="2.5" fill="#17171D"/>
+    <path d="M32 56q7 7 14 0" fill="none" stroke="#17171D" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="70" y="56" fill="#17171D" font-family="Arial" font-size="16" font-weight="700">ChatTI</text>
+  </g>
+  <g transform="translate(67 485)">
+    <rect width="224" height="100" rx="23" fill="#292A33" stroke="#FFFFFF" stroke-opacity=".15"/>
+    <circle cx="41" cy="50" r="19" fill="none" stroke="#FF5E00" stroke-width="3"/>
+    <path d="M31 52l7 7 13-17" fill="none" stroke="#FF5E00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="75" y="56" fill="#FFFFFF" font-family="Arial" font-size="16" font-weight="700">Servizi modulari</text>
+  </g>
+  <g transform="translate(380 620)">
+    <circle cx="0" cy="0" r="4" fill="#FF5E00"/><circle cx="36" cy="0" r="4" fill="#B995FF"/><circle cx="72" cy="0" r="4" fill="#D6FF55"/>
+    <text x="98" y="5" fill="#AEB0BB" font-family="Manrope" font-size="13" letter-spacing="1.4">CONNESSI, NEL PERIMETRO DELLA BANCA</text>
+  </g>
+</svg>

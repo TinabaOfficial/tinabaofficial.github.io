@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" fill="none">
+  <defs>
+    <linearGradient id="orb" x1="622" y1="170" x2="934" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D6FF55" stop-opacity=".62"/>
+      <stop offset=".48" stop-color="#B995FF" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#FF5E00" stop-opacity=".18"/>
+    </linearGradient>
+    <linearGradient id="chat" x1="620" y1="178" x2="1040" y2="484" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff"/>
+      <stop offset="1" stop-color="#F5F1FF"/>
+    </linearGradient>
+    <filter id="shadow" x="586" y="146" width="512" height="406" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="12"/>
+      <feGaussianBlur stdDeviation="14"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix values="0 0 0 0 0.09 0 0 0 0 0.17 0 0 0 0 0.27 0 0 0 0.12 0"/>
+      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
+
+  <!-- Soft color field and editorial dot pattern -->
+  <circle cx="842" cy="342" r="232" fill="url(#orb)"/>
+  <circle cx="842" cy="342" r="198" stroke="#7152C7" stroke-opacity=".26" stroke-width="1.5" stroke-dasharray="2 11"/>
+  <circle cx="842" cy="342" r="168" stroke="#FF5E00" stroke-opacity=".18" stroke-width="1.5"/>
+  <g fill="#172C43" fill-opacity=".12">
+    <circle cx="80" cy="94" r="3"/><circle cx="104" cy="94" r="3"/><circle cx="128" cy="94" r="3"/>
+    <circle cx="80" cy="118" r="3"/><circle cx="104" cy="118" r="3"/><circle cx="128" cy="118" r="3"/>
+    <circle cx="80" cy="142" r="3"/><circle cx="104" cy="142" r="3"/><circle cx="128" cy="142" r="3"/>
+  </g>
+
+  <!-- Connected source systems -->
+  <path d="M330 208C442 208 469 232 586 270" stroke="#FF5E00" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 14"/>
+  <path d="M330 350C440 350 472 350 586 350" stroke="#7152C7" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 14"/>
+  <path d="M330 492C442 492 469 468 586 430" stroke="#A8C936" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 14"/>
+  <circle cx="452" cy="216" r="7" fill="#FF5E00"/>
+  <circle cx="478" cy="350" r="7" fill="#7152C7"/>
+  <circle cx="452" cy="484" r="7" fill="#A8C936"/>
+
+  <g font-family="Arial, sans-serif" fill="#172C43">
+    <rect x="78" y="164" width="252" height="88" rx="22" fill="#fff" stroke="#DCE1E5" stroke-width="2"/>
+    <circle cx="117" cy="208" r="16" fill="#FF5E00"/>
+    <path d="M109 208h16M117 200v16" stroke="#172C43" stroke-width="3" stroke-linecap="round"/>
+    <text x="148" y="205" font-size="20" font-weight="700">Sistemi esistenti</text>
+    <text x="148" y="228" font-size="15" fill="#4D5C6B">dati e processi</text>
+
+    <rect x="78" y="306" width="252" height="88" rx="22" fill="#fff" stroke="#DCE1E5" stroke-width="2"/>
+    <rect x="102" y="330" width="30" height="40" rx="8" stroke="#7152C7" stroke-width="3"/>
+    <circle cx="117" cy="362" r="2.5" fill="#7152C7"/>
+    <text x="148" y="347" font-size="20" font-weight="700">App e canali</text>
+    <text x="148" y="370" font-size="15" fill="#4D5C6B">esperienze digitali</text>
+
+    <rect x="78" y="448" width="252" height="88" rx="22" fill="#fff" stroke="#DCE1E5" stroke-width="2"/>
+    <circle cx="117" cy="492" r="17" fill="#D6FF55"/>
+    <path d="M109 492h16" stroke="#172C43" stroke-width="3" stroke-linecap="round"/>
+    <text x="148" y="489" font-size="20" font-weight="700">Servizi modulari</text>
+    <text x="148" y="512" font-size="15" fill="#4D5C6B">Tinaba FaaS</text>
+  </g>
+
+  <!-- ChatTI as the focal point -->
+  <g filter="url(#shadow)">
+    <rect x="614" y="178" width="456" height="328" rx="30" fill="url(#chat)" stroke="#fff" stroke-width="2"/>
+  </g>
+  <g font-family="Arial, sans-serif" fill="#172C43">
+    <rect x="650" y="210" width="46" height="46" rx="15" fill="#7152C7"/>
+    <path d="M673 219l4.5 9.5L687 233l-9.5 4.5L673 247l-4.5-9.5L659 233l9.5-4.5L673 219Z" fill="#fff"/>
+    <text x="711" y="230" font-size="15" font-weight="700" letter-spacing="2.4">CHATTI</text>
+    <text x="711" y="251" font-size="14" fill="#4D5C6B">DATI AZIENDALI · LINGUAGGIO NATURALE</text>
+    <path d="M650 276h384" stroke="#DCE1E5" stroke-width="2"/>
+
+    <rect x="690" y="300" width="324" height="70" rx="20" fill="#EAE4FA"/>
+    <text x="714" y="328" font-size="13" font-weight="700" fill="#7152C7">UNA DOMANDA</text>
+    <text x="714" y="350" font-size="17" font-weight="600">Quali andamenti emergono?</text>
+
+    <circle cx="672" cy="414" r="12" fill="#FF5E00"/>
+    <path d="M668 414h8M672 410v8" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    <rect x="696" y="397" width="295" height="12" rx="6" fill="#172C43" fill-opacity=".82"/>
+    <rect x="696" y="420" width="243" height="9" rx="4.5" fill="#172C43" fill-opacity=".24"/>
+    <rect x="696" y="439" width="274" height="9" rx="4.5" fill="#172C43" fill-opacity=".24"/>
+    <rect x="696" y="458" width="190" height="9" rx="4.5" fill="#172C43" fill-opacity=".24"/>
+  </g>
+
+  <rect x="654" y="534" width="374" height="46" rx="23" fill="#172C43"/>
+  <circle cx="683" cy="557" r="6" fill="#D6FF55"/>
+  <text x="702" y="562" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1.2" fill="#fff">NEL PERIMETRO DELL’ORGANIZZAZIONE</text>
+</svg>
