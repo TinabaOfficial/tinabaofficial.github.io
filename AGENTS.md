@@ -16,6 +16,8 @@ The `staging` branch deploys to
 
 - Keep the site B2B and institutional: Tinaba is the technology partner;
   Banca Profilo is a case study or partner, not the site's main identity.
+- Always use “Tinaba di Banca Profilo” as the consumer product name, including
+  visible copy, image alternatives and reference labels.
 - Use `#FF5E00` as the canonical orange across the visual system, brand
   guidelines, diagrams, and illustrative assets.
 - Keep content in `src/`; never edit generated files under `docs/` directly.
@@ -165,11 +167,15 @@ The `staging` branch deploys to
   Keep lending copy separate from credit decisions and keep territorial-bank
   copy centered on continuity between digital onboarding, branches, advice,
   and local relationship.
-- The ChatTI conversation on `/soluzioni/chat-ti/` is a static illustration of
-  a ChatGPT session. Keep the interface visually faithful and generic; explain
-  ChatTI and the Tinaba plugin in the surrounding page copy rather than inside
-  the illustrated interface. Do not add a live chat, external assets, or real
-  business data to the illustration.
+- The ChatTI page `/soluzioni/chat-ti/` presents an anthracite (`#252525`) demo preview immediately
+  after “Dai dati alle opportunità” and before “Un’esperienza in ChatGPT”, replacing the former
+  generic conversational illustration. Keep its `chat-ti-example` anchor and
+  direct links to `/soluzioni/chat-ti/demo-commerciale/` and `/soluzioni/chat-ti/demo-marketing/`; do not reintroduce the mockup or
+  duplicate the preview elsewhere in the page.
+  The section is titled “ChatTI in azione” and presents commercial and marketing
+  previews side by side on desktop and stacked on mobile. Keep its text light,
+  the numbers 29 and 667 lime and its CTAs lime with ink text and
+  a visible lime keyboard-focus outline, distinct from the preceding lime section.
 - The lending capability card on `/soluzioni/` must link directly to its
   dedicated lending vertical.
 - Dark onboarding flows must override the light-surface circuit colors so
@@ -181,6 +187,28 @@ The `staging` branch deploys to
   must remain wide enough for the longest heading word.
 
 ## 3. Project Layout
+
+- The additional commercial ChatTI demo lives at `/soluzioni/chat-ti/demo-commerciale/` in
+  `src/chat-ti-demo-commerciale.njk`. It is an editorial six-step sequence linked from
+  ChatTI, the brand architecture, sitemap and llms.txt; it is not a live chat.
+  The user approved publication of the aggregate figures from the 22 October
+  2026 ChatTI session. Preserve the dated snapshot, population definitions,
+  partial last day, source limitations and distinction between observed signals,
+  hypotheses and bank decisions. Deposit balances do not represent capital
+  due to mature or capital at risk. The parent page links to this sequence
+  through its single demo preview.
+- The marketing demo lives at `/soluzioni/chat-ti/demo-marketing/` in
+  `src/chat-ti-demo-marketing.njk`, with the same editorial six-step structure.
+  Publication of its aggregate 22 October 2026 session figures is user-approved.
+  Preserve the 757 = 81 + 9 + 667 selection, the 307/360 activation-age split,
+  and the distinction between analytical audience and reachable audience.
+  The sample messages are campaign drafts, where consumer language is intentional;
+  use the approved product name “Tinaba di Banca Profilo”. The guide and in-app
+  channel are proposed, no messages were sent, and +1/+3/+5 percentage points
+  and 3/10/17 incremental events are illustrative assumptions, not forecasts.
+  The proposed first test compares variant A with ordinary experience, not an
+  A/B/control split. Both demo pages link to each other and retain dated sources
+  and limitations; sitemap, llms.txt and brand architecture include both routes.
 
 - `src/_includes/layouts/`: shared page layouts.
 - `src/_data/`: site-wide navigation and metadata.
@@ -268,13 +296,13 @@ must not be copied into this site without separate approval:
 - CSE, homepage: https://www.csebo.it/
 - CSE, A chi ci rivolgiamo: https://www.csebo.it/a-chi-ci-rivolgiamo/
 - CSE, Offerta di servizio: https://www.csebo.it/offerta-di-servizio/
-- Tinaba con Banca Profilo, Alipay+:
+- Tinaba di Banca Profilo, Alipay+:
   https://tinaba.bancaprofilo.it/tinaba-e-alipayplus
-- Tinaba con Banca Profilo, Investimenti:
+- Tinaba di Banca Profilo, Investimenti:
   https://tinaba.bancaprofilo.it/investimenti
 - MDOTM: https://www.mdotm.ai/
-- Tinaba con Banca Profilo, Gruppi: https://tinaba.bancaprofilo.it/gruppi
-- Tinaba con Banca Profilo, Chi siamo:
+- Tinaba di Banca Profilo, Gruppi: https://tinaba.bancaprofilo.it/gruppi
+- Tinaba di Banca Profilo, Chi siamo:
   https://tinaba.bancaprofilo.it/chi-siamo
 
 ## 4. Commands
@@ -292,7 +320,7 @@ must not be copied into this site without separate approval:
 - The authoritative source is `src/`; Eleventy reads `src/_includes/` and
   `src/_data/`, copies `src/assets/`, and writes the committed deployment
   output to `docs/`. Never use the generated HTML or CSS as an editing source.
-- The current build produces 11 HTML routes, including
+- The current build produces 16 HTML routes, including both ChatTI demos and
   `/soluzioni/onboarding/`, and copies the local favicon, wordmark, reference
   images, fonts, licenses, CSS, and JavaScript into `docs/assets/`.
 - Every generated page must expose one document language, one primary `h1`,

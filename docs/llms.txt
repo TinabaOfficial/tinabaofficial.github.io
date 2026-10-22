@@ -29,6 +29,8 @@ Il sito è istituzionale e B2B. Tinaba è il partner tecnologico; non va descrit
 - [Onboarding](https://tinaba.it/soluzioni/onboarding/): percorso di acquisizione e attivazione digitale.
 - [Lending](https://tinaba.it/soluzioni/lending/): verticale per il lending digitale governato dalla banca.
 - [ChatTI](https://tinaba.it/soluzioni/chat-ti/): dati aziendali e AI a supporto di strategie commerciali, marketing e sviluppo di prodotto.
+- [Demo commerciale ChatTI](https://tinaba.it/soluzioni/chat-ti/demo-commerciale/): sequenza di una sessione reale del 22 ottobre 2026 su dati aggregati Tinaba, dai comportamenti della clientela alle scadenze di deposito da verificare. I risultati sono una fotografia storica; le proposte restano soggette alla valutazione della banca.
+- [Demo marketing ChatTI](https://tinaba.it/soluzioni/chat-ti/demo-marketing/): sessione reale del 22 ottobre 2026, dall’intenzione dichiarata in onboarding a un bacino analitico di 667 profili, un brief, due bozze di messaggio e una proposta di test. Pubblico raggiungibile, canale e guida restano da verificare; gli scenari sono ipotesi, non previsioni o ROI.
 - [Per le banche](https://tinaba.it/per-le-banche/): modello progressivo di adozione e collaborazione.
 - [Casi d'uso](https://tinaba.it/casi-d-uso/): scenari e partnership concrete.
 - [Banca del territorio](https://tinaba.it/scenari/banca-territorio/): continuità tra digitale, filiale, consulenza e relazione locale.
@@ -52,4 +54,4 @@ Tinaba S.p.A. ha sede in Via Cerva, 28, 20122 Milano (MI), Italia. C.F. e P.IVA 
 
 ## Aggiornamento
 
-Questo documento descrive la struttura e il posizionamento pubblico del sito istituzionale. Per i contenuti più aggiornati e per il contesto completo, usare le pagine collegate sopra. Ultimo aggiornamento: 30.09.2026.
+Questo documento descrive la struttura e il posizionamento pubblico del sito istituzionale. Per i contenuti più aggiornati e per il contesto completo, usare le pagine collegate sopra. Ultimo aggiornamento: 22.10.2026.

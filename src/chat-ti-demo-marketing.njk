@@ -1,0 +1,220 @@
+---
+layout: layouts/base.njk
+title: ChatTI · Demo marketing
+description: "Dai dati al brief di campagna: una sessione reale di ChatTI individua 667 profili, sviluppa due messaggi e prepara un test misurabile per il marketing."
+permalink: /soluzioni/chat-ti/demo-marketing/
+---
+
+{% macro prompt(text) %}
+<div class="demo-prompt">
+  <p class="demo-label">La domanda</p>
+  <blockquote><p>{{ text }}</p></blockquote>
+</div>
+{% endmacro %}
+
+<section class="page-hero section-dark demo-hero marketing-hero">
+  <div class="container">
+    <a class="demo-back" href="/soluzioni/chat-ti/">← ChatTI · Dati aziendali e AI</a>
+    <div class="demo-hero-grid">
+      <div>
+        <p class="demo-label">Marketing · Una sessione reale · 22 ottobre 2026</p>
+        <h1>Dai dati<br>alla campagna.</h1>
+        <p class="hero-lead">L’intenzione dichiarata in onboarding incontra i primi comportamenti osservabili. La conversazione arriva a un pubblico definito, un brief, due messaggi e una proposta di test.</p>
+        <a class="button" href="#opportunita">Esplora la sequenza <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="demo-hero-finding">
+        <p class="demo-label">Il pubblico analitico individuato</p>
+        <p class="demo-hero-number">667</p>
+        <p>profili interessati alle spese quotidiane, senza un primo evento registrato nei quattro servizi selezionati e senza un SDD attivo.</p>
+        <p class="demo-note">Il punto di partenza per un’ipotesi di campagna. Idoneità e raggiungibilità restano da verificare.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="demo-context">
+  <div class="container">
+    <p><strong>Il caso Tinaba di Banca Profilo.</strong> Dati reali aggregati, consultati con ChatTI il 22 ottobre 2026. Prompt e risposte sono sintetizzati a fini dimostrativi. La campagna è una proposta: non sono stati effettuati invii. Tinaba fornisce la tecnologia; le valutazioni e le iniziative restano alla banca.</p>
+    <nav class="demo-index" aria-label="Passaggi della demo marketing">
+      <a href="#opportunita">Opportunità</a><a href="#pubblico">Pubblico</a><a href="#proposta">Proposta</a><a href="#brief">Brief e messaggi</a><a href="#scenari">Scenari</a><a href="#test">Test e decisione</a>
+    </nav>
+  </div>
+</div>
+
+<section class="section demo-step" id="opportunita" aria-labelledby="opportunita-title">
+  <div class="container demo-editorial">
+    <div class="demo-aside">
+      <h2 id="opportunita-title">Una direzione motivata.</h2>
+      <p>Prima del messaggio, l’analisi mette a confronto tre possibilità di intervento nella clientela esistente.</p>
+      <p class="demo-value"><strong>Il valore di ChatTI</strong>I comportamenti osservati aiutano il marketing a scegliere dove approfondire.</p>
+    </div>
+    <div class="demo-answer">
+{{ prompt('Individua tre opportunità per aumentare l’utilizzo dei servizi nella clientela esistente. Confronta dimensione del bacino ed evidenze disponibili. Quale approfondiresti per una campagna?') }}
+      <p class="demo-label">La risposta · Tre opportunità candidate</p>
+      <div class="demo-table-wrap" role="region" aria-label="Confronto delle opportunità marketing" tabindex="0">
+        <table class="demo-table">
+          <caption>Bacini analitici con criteri diversi, potenzialmente sovrapposti</caption>
+          <thead><tr><th scope="col">Opportunità</th><th scope="col">Profili</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Membership per clienti consolidati con ricariche carta e SDD recenti</th><td>2.785</td></tr>
+            <tr><th scope="row">Accompagnamento verso una prossima scadenza di deposito</th><td>297</td></tr>
+            <tr class="demo-table-emphasis"><th scope="row">Primi passi per nuovi clienti interessati alle spese quotidiane</th><td>667</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="demo-takeaway">La scelta cade sui <strong>primi passi</strong>: l’interesse è dichiarato dal cliente e i segnali disponibili permettono di definire un pubblico iniziale.</p>
+      <p class="demo-note">Il bacino di 667 profili deriva dalla selezione descritta nel passaggio successivo. L’analisi non spiega perché manchino determinati eventi e non stabilisce quale campagna produrrà il ritorno maggiore.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-light demo-step" id="pubblico" aria-labelledby="pubblico-title">
+  <div class="container demo-editorial">
+    <div class="demo-aside">
+      <h2 id="pubblico-title">Un pubblico preciso.</h2>
+      <p>L’intenzione dichiarata è un punto di partenza. I primi comportamenti distinguono situazioni che richiedono messaggi diversi.</p>
+      <p class="demo-value"><strong>Il valore di ChatTI</strong>Il dialogo definisce inclusioni ed esclusioni prima di costruire la comunicazione.</p>
+    </div>
+    <div class="demo-answer">
+{{ prompt('Tra i nuovi clienti interessati alle spese quotidiane, distingui chi ha già iniziato, chi sta predisponendo un servizio e chi potrebbe beneficiare di un accompagnamento iniziale.') }}
+      <p class="demo-label">La risposta · Da 757 a 667 profili</p>
+      <p>Tra i profili consumer maggiorenni e abilitati, attivati in ottobre da <strong>7–21 giorni</strong>, 757 hanno dichiarato interesse per le spese quotidiane.</p>
+      <div class="demo-table-wrap" role="region" aria-label="Selezione del pubblico marketing" tabindex="0">
+        <table class="demo-table">
+          <caption>Situazione osservata al 22 ottobre 2026</caption>
+          <thead><tr><th scope="col">Situazione</th><th scope="col">Profili</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Almeno un primo evento registrato nei servizi selezionati</th><td>81</td></tr>
+            <tr><th scope="row">SDD già attivo, senza un primo evento datato</th><td>9</td></tr>
+            <tr class="demo-table-emphasis"><th scope="row">Nessun primo evento registrato e nessun SDD attivo</th><td>667</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="demo-takeaway">Il pubblico analitico comprende <strong>307 profili</strong> attivati da 7–13 giorni e <strong>360</strong> attivati da 14–21 giorni.</p>
+      <p>Chi presenta già un primo evento o un SDD predisposto è escluso dal bacino. Prima di un eventuale invio vanno verificati raggiungibilità, consensi applicabili ed esposizione ad altre comunicazioni.</p>
+      <p class="demo-note">Eventi selezionati: ricarica carta, addebito SDD, P2P e P2B. Spesa con carta, bonifici e tutta l’attività in app non rientrano in questa lettura. L’assenza di eventi registrati non dimostra inattività.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark demo-step" id="proposta" aria-labelledby="proposta-title">
+  <div class="container demo-editorial">
+    <div class="demo-aside">
+      <h2 id="proposta-title">Una proposta pertinente.</h2>
+      <p>La comunicazione prende forma nel punto di incontro tra intenzione dichiarata e situazione osservabile.</p>
+      <p class="demo-value"><strong>Il valore di ChatTI</strong>L’analisi sostiene una proposta e rende riconoscibili le ipotesi ancora da verificare.</p>
+    </div>
+    <div class="demo-answer">
+{{ prompt('Collega il comportamento osservato all’intenzione dichiarata. Quale proposta di comunicazione testeresti? Distingui evidenza e ipotesi.') }}
+      <p class="demo-label">La proposta · Un accompagnamento ai primi passi</p>
+      <h3>L’evidenza</h3>
+      <p>Il pubblico ha indicato interesse per le spese quotidiane e non presenta i primi eventi selezionati.</p>
+      <h3>L’ipotesi</h3>
+      <p>Un orientamento breve potrebbe aiutare alcuni clienti a individuare un primo utilizzo pertinente. Non ci sono evidenze per attribuire la situazione a difficoltà, disinteresse o mancata conoscenza delle funzioni.</p>
+      <p class="demo-statement">Una <strong>guida breve ai primi passi</strong>, da predisporre e verificare insieme al prodotto.</p>
+      <p class="demo-note">Nessun incentivo economico nella prima sperimentazione. La guida e il punto di ingresso nell’app sono componenti proposte, ancora da realizzare e validare.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section demo-step" id="brief" aria-labelledby="brief-title">
+  <div class="container demo-editorial">
+    <div class="demo-aside">
+      <h2 id="brief-title">Dall’analisi ai messaggi.</h2>
+      <p>La conversazione arriva a materiali che il marketing può revisionare, mantenendo il collegamento con le evidenze.</p>
+      <p class="demo-value"><strong>Il valore di ChatTI</strong>Pubblico, proposta e misura del risultato confluiscono in un brief utilizzabile.</p>
+    </div>
+    <div class="demo-answer">
+{{ prompt('Prepara il brief e due varianti per lo stesso pubblico e canale. Mantieni identici corpo e pulsante, cambiando soltanto l’argomento del titolo.') }}
+      <p class="demo-label">Il brief · Un primo passo per le spese quotidiane</p>
+      <dl class="demo-brief">
+        <div><dt>Obiettivo</dt><dd>Aumentare la quota di profili con un primo evento osservato nei servizi selezionati.</dd></div>
+        <div><dt>Pubblico</dt><dd>Profili idonei ricavati dal bacino analitico di 667.</dd></div>
+        <div><dt>Proposta</dt><dd>Accompagnamento coerente con l’interesse dichiarato, senza incentivi economici nella prima prova.</dd></div>
+        <div><dt>Canale e destinazione</dt><dd>Messaggio in app, come ipotesi da confermare, collegato a una guida breve da realizzare e validare.</dd></div>
+        <div><dt>Misura principale</dt><dd>Primo evento osservato entro 14 giorni dall’assegnazione al test.</dd></div>
+      </dl>
+      <p class="demo-label">Bozze di campagna · Due alternative da revisionare</p>
+{% set campaignBody = 'Hai scelto Tinaba di Banca Profilo anche per le spese quotidiane. Esplora una guida breve alle funzioni disponibili e scegli il primo passo più utile per te.' %}
+      <article class="demo-message" aria-labelledby="variant-a">
+        <h3 id="variant-a">Variante A · Pertinenza</h3>
+        <p class="demo-message-title">Le tue spese quotidiane: da dove iniziare?</p>
+        <p>{{ campaignBody }}</p>
+        <p class="demo-note"><strong>Pulsante:</strong> Esplora i primi passi</p>
+      </article>
+      <article class="demo-message" aria-labelledby="variant-b">
+        <h3 id="variant-b">Variante B · Orientamento</h3>
+        <p class="demo-message-title">Un primo passo alla scoperta di Tinaba di Banca Profilo</p>
+        <p>{{ campaignBody }}</p>
+        <p class="demo-note"><strong>Pulsante:</strong> Esplora i primi passi</p>
+      </article>
+      <p class="demo-note">Sono bozze, con corpo e pulsante identici e un diverso argomento nel titolo. Il linguaggio si rivolge al destinatario della campagna. Nessun messaggio è stato inviato e nessuna guida è attiva in questa demo.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-light demo-step" id="scenari" aria-labelledby="scenari-title">
+  <div class="container demo-editorial">
+    <div class="demo-aside">
+      <h2 id="scenari-title">Scenari trasparenti.</h2>
+      <p>Il dimensionamento esplicita le assunzioni e le informazioni necessarie per discutere la convenienza.</p>
+      <p class="demo-value"><strong>Il valore di ChatTI</strong>Il potenziale viene esplorato senza attribuire alla campagna risultati ancora da misurare.</p>
+    </div>
+    <div class="demo-answer">
+{{ prompt('Quale risultato potrebbe produrre il test? Mostra scenari trasparenti e indica cosa manca per valutare la convenienza.') }}
+      <p class="demo-label">Gli scenari · Ipotesi, non previsioni</p>
+      <p>Se tutti i 667 profili risultassero idonei, un primo disegno potrebbe prevedere <strong>334 assegnati al trattamento</strong> e <strong>333 al controllo</strong>.</p>
+      <div class="demo-table-wrap" role="region" aria-label="Scenari ipotetici del test marketing" tabindex="0">
+        <table class="demo-table">
+          <caption>Eventi incrementali ipotetici sui 334 trattati, arrotondati</caption>
+          <thead><tr><th scope="col">Aumento rispetto al controllo</th><th scope="col">Eventi incrementali</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">+1 punto percentuale</th><td>3</td></tr>
+            <tr><th scope="row">+3 punti percentuali</th><td>10</td></tr>
+            <tr><th scope="row">+5 punti percentuali</th><td>17</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Costi di produzione e distribuzione, tasso naturale nel periodo del test e margine incrementale non sono disponibili nelle fonti consultate.</p>
+      <p><strong>ROI e budget di pareggio non sono ancora calcolabili.</strong> Gli scenari illustrano variazioni ipotetiche rispetto al controllo e non costituiscono una previsione di efficacia.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-accent demo-step" id="test" aria-labelledby="test-title">
+  <div class="container demo-editorial">
+    <div class="demo-aside">
+      <h2 id="test-title">Una prova misurabile.</h2>
+      <p>Il percorso si chiude con una proposta da portare alla riunione marketing e con le condizioni necessarie per valutarla.</p>
+    </div>
+    <div class="demo-answer">
+{{ prompt('Quale test proponiamo alla riunione marketing? Che cosa potremo concludere e quali informazioni servono prima di partire?') }}
+      <p class="demo-label">La proposta · Variante A contro percorso ordinario</p>
+      <p class="demo-decision">Testare inizialmente la variante A rispetto al percorso ordinario. La variante B resta un’alternativa per una sperimentazione successiva.</p>
+      <ul class="demo-test-list">
+        <li>Assegnazione casuale, bilanciata per anzianità di attivazione.</li>
+        <li>Esclusione dei profili che nel frattempo presentano già il comportamento selezionato.</li>
+        <li>Misura principale su tutti gli assegnati: primo evento osservato entro 14 giorni.</li>
+        <li>Apertura della guida e interazione con il messaggio come misure secondarie.</li>
+        <li>Controllo delle altre comunicazioni che potrebbero influenzare il risultato.</li>
+        <li>Verifica preliminare della numerosità necessaria, usando un tasso di riferimento e un effetto minimo rilevante.</li>
+      </ul>
+      <p>I 667 profili non garantiscono da soli conclusioni statisticamente affidabili. Il pilota può verificare funzionamento e misurabilità del percorso; l’efficacia dipenderà dal campione effettivo.</p>
+      <p><strong>La decisione richiesta:</strong> preparare la guida, verificare pubblico raggiungibile e misurazione degli eventi, raccogliere i costi e dimensionare il test. L’ipotesi è che un accompagnamento coerente con l’intenzione dichiarata aumenti il primo utilizzo osservabile.</p>
+      <a class="button button-dark" href="/contatti/">Parliamo di ChatTI <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section demo-method" aria-labelledby="demo-method-title">
+  <div class="container demo-editorial">
+    <div class="demo-aside"><h2 id="demo-method-title">Fonti e perimetro.</h2></div>
+    <div class="demo-answer">
+      <p>Fonte: dati aziendali Tinaba, analizzati tramite ChatTI il <time datetime="2026-10-22">22 ottobre 2026</time>. La pagina documenta una sessione conclusa e non presenta dati aggiornati in tempo reale.</p>
+      <p>Pubblico marketing: profili consumer maggiorenni e abilitati, attivati in ottobre da 7–21 giorni, con interesse dichiarato per le spese quotidiane. I criteri delle altre opportunità sono diversi: i bacini non sono una partizione della clientela e possono sovrapporsi.</p>
+      <p>I conteggi sono stati riconciliati e il bacino selezionato non presenta duplicati esatti. Le date mancanti restano eventi non registrati e non provano il mancato utilizzo. I quattro servizi selezionati non coprono l’intera attività bancaria o in app.</p>
+      <p>Il pubblico analitico non equivale al pubblico raggiungibile. Guida, messaggi, canale, assegnazione e misurazione del test richiedono verifica e approvazione operativa. I risultati dipendono dalle fonti, dalla qualità dei dati e dagli accessi autorizzati di ciascuna organizzazione.</p>
+      <a class="demo-back" href="/soluzioni/chat-ti/demo-commerciale/">Esplora anche la demo sulle priorità commerciali →</a>
+    </div>
+  </div>
+</section>
