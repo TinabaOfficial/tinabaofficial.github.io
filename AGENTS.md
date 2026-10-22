@@ -176,6 +176,12 @@ The `staging` branch deploys to
   previews side by side on desktop and stacked on mobile. Keep its text light,
   the numbers 29 and 667 lime and its CTAs lime with ink text and
   a visible lime keyboard-focus outline, distinct from the preceding lime section.
+  Give the journey greater prominence than the final count: each preview shows
+  a four-stage sequence, with 29 and 667 retained as smaller evidence points.
+  Both demo openings describe the exploration; transitions before subsequent
+  questions explain why the analysis continues. Each final step summarizes the
+  questions explored, the refined interpretation and the materials prepared for
+  business evaluation, before the sources. Preserve all dated figures and limits.
 - The lending capability card on `/soluzioni/` must link directly to its
   dedicated lending vertical.
 - Dark onboarding flows must override the light-surface circuit colors so
