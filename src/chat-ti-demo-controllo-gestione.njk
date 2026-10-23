@@ -1,0 +1,235 @@
+---
+layout: layouts/base.njk
+title: ChatTI · Demo controllo di gestione
+description: Una sessione reale di ChatTI legge i ricavi aggregati, riconcilia gli scostamenti e costruisce sensibilità per il controllo di gestione, distinguendo risultati e limiti.
+permalink: /soluzioni/chat-ti/demo-controllo-gestione/
+---
+
+{% macro prompt(text) %}
+<div class="demo-prompt">
+  <p class="demo-label">La domanda</p>
+  <blockquote><p>{{ text }}</p></blockquote>
+</div>
+{% endmacro %}
+
+<section class="page-hero section-dark demo-hero management-hero">
+  <div class="container">
+    <a class="demo-back" href="/soluzioni/chat-ti/">← ChatTI · Dati aziendali e AI</a>
+    <div class="demo-hero-grid">
+      <div>
+        <p class="demo-label">Controllo di gestione · Sessione reale · 23 ottobre 2026</p>
+        <h1>Dal risultato alle leve.</h1>
+        <p class="hero-lead">Una lettura dei ricavi diventa un confronto tra periodi, una spiegazione per componenti e una valutazione di scenari. Ogni passaggio chiarisce che cosa i dati mostrano e quali informazioni servono ancora alla direzione.</p>
+        <a class="button" href="#perimetro">Esplora la sequenza <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="demo-hero-finding">
+        <p class="demo-label">La prima lettura</p>
+        <p class="demo-hero-number">−3,26%</p>
+        <p>ricavi di settembre rispetto ad agosto. La media giornaliera resta quasi invariata: −0,03%.</p>
+        <p class="demo-note">Il totale mensile, da solo, non basta a spiegare l'andamento.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="demo-context">
+  <div class="container">
+    <p><strong>Il caso Tinaba di Banca Profilo.</strong> Dati aziendali aggregati, consultati con ChatTI il 23 ottobre 2026. Il perimetro consente di leggere ricavi e indicatori operativi; nelle fonti consultate non emergono budget, costi o criteri di allocazione. La pagina distingue perciò le variazioni osservate dalla redditività, che non è possibile dedurre. Tinaba fornisce la tecnologia; le valutazioni economiche e le decisioni restano alla banca.</p>
+    <nav class="demo-index" aria-label="Passaggi della demo controllo di gestione">
+      <a href="#perimetro">Perimetro</a><a href="#scostamenti">Scostamenti</a><a href="#calendario">Calendario</a><a href="#driver">Driver</a><a href="#scenari">Scenari</a><a href="#decisione">Decisione</a>
+    </nav>
+  </div>
+</div>
+
+<section class="section demo-step" id="perimetro" aria-labelledby="perimetro-title">
+  <div class="container demo-editorial">
+    <div class="demo-aside">
+      <h2 id="perimetro-title">Prima, un perimetro affidabile.</h2>
+      <p>La conversazione comincia da fonti, periodo e definizioni: il risultato viene ricostruito solo dove i dati lo consentono.</p>
+      <p class="demo-value"><strong>Il valore di ChatTI</strong>Rende espliciti i dati disponibili e quelli che mancano per rispondere alla domanda economica.</p>
+    </div>
+    <div class="demo-answer">
+      {{- prompt('Verifica quali componenti economiche e operative sono disponibili. Qual è l’ultimo periodo completo e confrontabile? Indica perimetro, definizioni, dati mancanti e conclusioni che possiamo sostenere.') }}
+      <p class="demo-label">La risposta · Ricavi e indicatori operativi</p>
+      <p>Le fonti consultate permettono di ricostruire ricavi mensili per componente, alcuni indicatori operativi e giacenze giornaliere utilizzabili per calcolare medie. Non risultano disponibili budget, costi o criteri di allocazione: il percorso può spiegare variazioni dei ricavi, ma non margini o redditività.</p>
+      <p>Settembre è l'ultimo mese interamente trascorso e disponibile; ottobre è parziale. La disponibilità dei dati non attesta la chiusura contabile del periodo.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-light demo-step" id="scostamenti" aria-labelledby="scostamenti-title">
+  <div class="container demo-editorial">
+    <div class="demo-aside">
+      <h2 id="scostamenti-title">Gli scostamenti, riconciliati.</h2>
+      <p>Il confronto mette insieme mese precedente e periodo omologo, poi risale dalle componenti al risultato complessivo.</p>
+      <p class="demo-value"><strong>Il valore di ChatTI</strong>Fa emergere dove si concentra la variazione, mantenendo il collegamento con il totale.</p>
+    </div>
+    <div class="demo-answer">
+      <p class="demo-transition">Dopo aver definito un periodo completo e confrontabile, la domanda successiva misura le differenze e ne riconcilia i contributi.</p>
+      {{- prompt('Confronta settembre con agosto e con settembre dell’anno precedente. Quali componenti spiegano la differenza complessiva? Riconcilia il ponte con il totale.') }}
+      <p class="demo-label">La risposta · Ricavi aggregati Tinaba e Banca Profilo</p>
+      <div class="demo-table-wrap" role="region" aria-label="Confronto dei ricavi per periodo" tabindex="0">
+        <table class="demo-table">
+          <caption>Valori aggregati per periodo</caption>
+          <thead><tr><th scope="col">Periodo</th><th scope="col">Ricavi</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Settembre 2025</th><td>335.004&nbsp;€</td></tr>
+            <tr><th scope="row">Agosto 2026</th><td>438.966&nbsp;€</td></tr>
+            <tr class="demo-table-emphasis"><th scope="row">Settembre 2026</th><td>424.672&nbsp;€</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Settembre registra <strong>−14.294 € (−3,26%)</strong> rispetto ad agosto e <strong>+89.668 € (+26,77%)</strong> rispetto a settembre 2025. La raccolta diretta rappresenta l'80,84% dei ricavi di settembre.</p>
+      <div class="demo-table-wrap" role="region" aria-label="Riconciliazione della variazione dei ricavi" tabindex="0">
+        <table class="demo-table">
+          <caption>Contributo alla variazione rispetto ad agosto 2026</caption>
+          <thead><tr><th scope="col">Componente</th><th scope="col">Variazione</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Ricavi da raccolta diretta</th><td>−14.497&nbsp;€</td></tr>
+            <tr><th scope="row">Servizi bancari</th><td>+1.414&nbsp;€</td></tr>
+            <tr><th scope="row">Altre voci valorizzate</th><td>−1.211&nbsp;€</td></tr>
+            <tr class="demo-table-emphasis"><th scope="row">Totale riconciliato</th><td>−14.294&nbsp;€</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="demo-note">Le voci non valorizzate restano escluse dalla somma. La quadratura aritmetica non certifica la completezza contabile.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark demo-step" id="calendario" aria-labelledby="calendario-title">
+  <div class="container demo-editorial">
+    <div class="demo-aside">
+      <h2 id="calendario-title">Il calendario cambia la lettura.</h2>
+      <p>Agosto e settembre hanno durata diversa. La media per giorno aiuta a distinguere il totale mensile dal ritmo osservato.</p>
+      <p class="demo-value"><strong>Il valore di ChatTI</strong>Una domanda successiva cambia la metrica e rende visibile una sfumatura che il totale nasconde.</p>
+    </div>
+    <div class="demo-answer">
+      <p class="demo-transition">Il confronto evidenzia un calo sul totale mensile. Prima di interpretarlo, la conversazione verifica se la durata dei due mesi cambia il quadro.</p>
+      {{- prompt('Agosto e settembre hanno durata diversa. Confronta anche i ricavi medi giornalieri, senza attribuire automaticamente al calendario tutta la variazione.') }}
+      <p class="demo-label">La risposta · Media giornaliera quasi stabile</p>
+      <div class="demo-table-wrap" role="region" aria-label="Ricavi medi giornalieri" tabindex="0">
+        <table class="demo-table">
+          <caption>Confronto tra agosto e settembre 2026</caption>
+          <thead><tr><th scope="col">Indicatore</th><th scope="col">Agosto</th><th scope="col">Settembre</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Giorni di calendario</th><td>31</td><td>30</td></tr>
+            <tr><th scope="row">Ricavi medi per giorno</th><td>14.160,19&nbsp;€</td><td>14.155,73&nbsp;€</td></tr>
+            <tr class="demo-table-emphasis"><th scope="row">Variazione della media giornaliera</th><td colspan="2">−0,03%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="demo-takeaway">Il calo del totale mensile si accompagna a una media per giorno quasi invariata.</p>
+      <p class="demo-note">La normalizzazione è descrittiva: non dimostra che tutte le componenti maturino o vengano contabilizzate con lo stesso criterio.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section demo-step" id="driver" aria-labelledby="driver-title">
+  <div class="container demo-editorial">
+    <div class="demo-aside">
+      <h2 id="driver-title">Dentro il totale, i driver divergono.</h2>
+      <p>Giacenze medie e ricavi non si muovono sempre nella stessa direzione: la scomposizione aiuta a capire che cosa approfondire.</p>
+      <p class="demo-value"><strong>Il valore di ChatTI</strong>Porta dalla variazione aggregata a una lettura per componente, rendendo espliciti metodo e residui.</p>
+    </div>
+    <div class="demo-answer">
+      <p class="demo-transition">La media per giorno resta quasi stabile, ma il dato complessivo può nascondere movimenti diversi tra prodotti. L'approfondimento mette a confronto giacenze e ricavi.</p>
+      {{- prompt('Approfondisci wallet e conto deposito usando le giacenze medie giornaliere. Distingui durata del mese, variazione delle giacenze e residuo unitario.') }}
+      <p class="demo-label">La risposta · Una scomposizione aritmetica</p>
+      <div class="demo-table-wrap" role="region" aria-label="Giacenze medie e variazioni dei ricavi" tabindex="0">
+        <table class="demo-table">
+          <caption>Giacenze medie giornaliere e ricavi, agosto-settembre 2026</caption>
+          <thead><tr><th scope="col">Indicatore</th><th scope="col">Wallet</th><th scope="col">Conto deposito</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Giacenza media agosto</th><td>50,10&nbsp;milioni&nbsp;€</td><td>74,66&nbsp;milioni&nbsp;€</td></tr>
+            <tr><th scope="row">Giacenza media settembre</th><td>48,70&nbsp;milioni&nbsp;€</td><td>75,99&nbsp;milioni&nbsp;€</td></tr>
+            <tr><th scope="row">Variazione giacenza media</th><td>−2,79%</td><td>+1,78%</td></tr>
+            <tr class="demo-table-emphasis"><th scope="row">Variazione ricavi mensili</th><td>−7.665&nbsp;€</td><td>−2.840&nbsp;€</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="demo-table-wrap" role="region" aria-label="Ponte aritmetico per wallet e conto deposito" tabindex="0">
+        <table class="demo-table">
+          <caption>Contributi aritmetici alla variazione dei ricavi</caption>
+          <thead><tr><th scope="col">Componente del ponte</th><th scope="col">Wallet</th><th scope="col">Conto deposito</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Un giorno in meno, a condizioni iniziali</th><td>−4.235,19&nbsp;€</td><td>−6.099,23&nbsp;€</td></tr>
+            <tr><th scope="row">Variazione delle giacenze medie</th><td>−3.549,04&nbsp;€</td><td>+3.258,65&nbsp;€</td></tr>
+            <tr><th scope="row">Residuo del quoziente unitario</th><td>+119,23&nbsp;€</td><td>+0,58&nbsp;€</td></tr>
+            <tr class="demo-table-emphasis"><th scope="row">Variazione complessiva</th><td>−7.665,00&nbsp;€</td><td>−2.840,00&nbsp;€</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>I ricavi dei depositi diminuiscono mentre le giacenze medie crescono; nel wallet diminuiscono entrambe le misure. Per le carte, i ricavi interchange scendono di 430 €: 429,28 € sono associati alla variazione del transato e 0,72 € al quoziente medio ricavo/transato, vicino allo 0,20%.</p>
+      <p class="demo-note">Il residuo del ponte non identifica da solo prezzi, tassi contrattuali o margini. Il rapporto medio ricavo/transato non equivale a una tariffa contrattuale.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-light demo-step" id="scenari" aria-labelledby="scenari-title">
+  <div class="container demo-editorial">
+    <div class="demo-aside">
+      <h2 id="scenari-title">Scenari per valutare le leve.</h2>
+      <p>Rapporti osservati e assunzioni esplicite consentono di dimensionare sensibilità, senza trasformarle in previsioni.</p>
+      <p class="demo-value"><strong>Il valore di ChatTI</strong>Aiuta a discutere cosa cambierebbe al variare di un'ipotesi e quali costi servono per valutare la convenienza.</p>
+    </div>
+    <div class="demo-answer">
+      <p class="demo-transition">Dopo la scomposizione, la conversazione traduce i rapporti osservati in scenari statici. Ogni scenario varia una leva e mantiene visibili le assunzioni.</p>
+      {{- prompt('Costruisci sensibilità sui ricavi usando i rapporti osservati a settembre. Esplicita le assunzioni e separa ricavo e convenienza economica.') }}
+      <p class="demo-label">La risposta · Sensibilità mensili sui ricavi</p>
+      <div class="demo-table-wrap" role="region" aria-label="Scenari statici di sensibilità sui ricavi" tabindex="0">
+        <table class="demo-table">
+          <caption>Scenari con rapporti osservati a settembre mantenuti costanti</caption>
+          <thead><tr><th scope="col">Scenario statico</th><th scope="col">Sensibilità sui ricavi</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">+10% di transato carta</th><td>+1.336&nbsp;€ nel mese</td></tr>
+            <tr><th scope="row"><span class="demo-nowrap">+1&nbsp;milione&nbsp;€</span> di giacenza media wallet per 30 giorni</th><td>+2.539&nbsp;€ nel mese</td></tr>
+            <tr><th scope="row"><span class="demo-nowrap">+1&nbsp;milione&nbsp;€</span> di giacenza media deposito per 30 giorni</th><td>+2.451&nbsp;€ nel mese</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="demo-note">Sono sensibilità matematiche, non previsioni. Mantengono costanti i rapporti osservati, non includono costi o fattibilità commerciale e non sono automaticamente sommabili. Senza i costi di raccolta e servizio non è possibile concludere quale leva sia più conveniente.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark demo-step" id="decisione" aria-labelledby="decisione-title">
+  <div class="container demo-editorial">
+    <div class="demo-aside">
+      <h2 id="decisione-title">Una base per la direzione.</h2>
+      <p>Il percorso si chiude con una sintesi che tiene separati risultato, interpretazione e informazioni ancora necessarie.</p>
+      <p class="demo-value"><strong>Il valore di ChatTI</strong>Trasforma un'analisi in una base di discussione, lasciando la valutazione economica e la decisione alle persone.</p>
+    </div>
+    <div class="demo-answer">
+      <p class="demo-transition">La sensibilità dimensiona possibili variazioni dei ricavi, ma non misura la convenienza. La nota finale esplicita quale decisione si può valutare e quali input economici mancano.</p>
+      {{- prompt('Prepara una nota per la direzione: risultato del periodo, principali scostamenti, componenti quantificate, incertezze e leve da valutare. Indica quali informazioni servono prima di una decisione.') }}
+      <p class="demo-label">La sintesi per la direzione</p>
+      <p class="demo-decision">A settembre i ricavi aggregati sono 424.672 €: −3,26% sul mese e +26,77% sull'anno. La media per giorno resta quasi invariata. Le giacenze medie wallet diminuiscono mentre quelle dei depositi crescono; i ricavi di entrambe le componenti scendono.</p>
+      <p>La proposta è approfondire i movimenti delle giacenze e riconciliare le componenti economiche con le funzioni competenti prima di attribuire le variazioni a comportamenti, trasferimenti tra prodotti o condizioni economiche.</p>
+      <p><strong>Per valutare margini e leve:</strong> integrare budget, costi e criteri di attribuzione. La decisione operativa resta alla banca.</p>
+      <div class="demo-session-summary">
+        <h3>Il lavoro costruito nella sessione</h3>
+        <dl class="demo-brief">
+          <div><dt>Domande approfondite</dt><dd>Come si compone il risultato, quanto incide la durata dei mesi e come si muovono giacenze e ricavi per componente.</dd></div>
+          <div><dt>Una lettura più precisa</dt><dd>Il calo mensile convive con una media giornaliera quasi stabile; le componenti della raccolta mostrano andamenti diversi.</dd></div>
+          <div><dt>Materiali per la valutazione aziendale</dt><dd>Confronto tra periodi, ponti di riconciliazione, sensibilità sui ricavi e input richiesti per approfondire costi e margini.</dd></div>
+        </dl>
+      </div>
+      <a class="button button-dark" href="/contatti/">Parliamo di ChatTI <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section demo-method" aria-labelledby="demo-method-title">
+  <div class="container demo-editorial">
+    <div class="demo-aside"><h2 id="demo-method-title">Fonti e perimetro.</h2></div>
+    <div class="demo-answer">
+      <p>Fonte: dati aziendali aggregati Tinaba e Banca Profilo, analizzati tramite ChatTI il <time datetime="2026-10-23">23 ottobre 2026</time>. La pagina documenta una sessione conclusa e non presenta dati aggiornati in tempo reale.</p>
+      <p>Per il confronto sono stati usati settembre 2025, agosto 2026 e settembre 2026; ottobre 2026 era parziale. Agosto contiene 31 giorni distinti e settembre 30. Nei sei campi giornalieri utilizzati per le medie non risultano valori mancanti.</p>
+      <p>Due voci di ricavo non erano valorizzate e restano escluse dalle somme. La riconciliazione aritmetica dei componenti non certifica la completezza contabile né la chiusura del periodo.</p>
+      <p>Nelle fonti consultate non erano disponibili budget, costi o criteri di allocazione. Il percorso non misura margini o redditività. Le sensibilità mantengono costanti i rapporti osservati e non sono forecast; l'effetto economico dipende anche da costi, condizioni contrattuali, fattibilità e possibili spostamenti tra prodotti.</p>
+      <p>Le conclusioni sono limitate alle metriche, ai periodi e al perimetro rappresentati nelle fonti. Valutazioni e decisioni restano alla banca.</p>
+      <p class="demo-related"><a class="demo-back" href="/soluzioni/chat-ti/demo-commerciale/">Demo priorità commerciali →</a> · <a class="demo-back" href="/soluzioni/chat-ti/demo-marketing/">Demo marketing →</a></p>
+    </div>
+  </div>
+</section>

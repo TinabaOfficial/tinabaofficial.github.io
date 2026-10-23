@@ -472,6 +472,7 @@ h3 { font-size: 1.75rem; line-height: 1.05; letter-spacing: -.06em; }
 .demo-label { margin-bottom: 20px; font-size: 14px; font-weight: 700; }
 .demo-hero-finding { padding: 32px; color: var(--ink); background: var(--lime); }
 .demo-hero-number { margin: 0 0 16px; font-size: clamp(6rem, 12vw, 11rem); font-weight: 700; line-height: .95; letter-spacing: -.07em; }
+.management-hero .demo-hero-number { font-size: clamp(4rem, 8vw, 6rem); }
 .demo-hero-finding > p:last-child { margin-bottom: 0; }
 .demo-context { padding: 36px 0; background: #e9e8e2; }
 .demo-context p { max-width: 900px; }
@@ -502,7 +503,8 @@ h3 { font-size: 1.75rem; line-height: 1.05; letter-spacing: -.06em; }
 .demo-table tbody tr:nth-child(even) { background: rgba(17,17,17,.035); }
 .demo-table tbody .demo-table-emphasis { color: var(--ink); background: var(--lime); }
 .demo-table .demo-table-emphasis th, .demo-table .demo-table-emphasis td { font-weight: 700; }
-.demo-table td { font-variant-numeric: tabular-nums; }
+.demo-table td { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.demo-nowrap { white-space: nowrap; }
 .section-dark .demo-table thead th, .section-dark .demo-table tfoot { background: #252525; }
 .section-dark .demo-table tbody tr:nth-child(even) { background: #1c1c1c; }
 .section-dark .demo-table tbody .demo-table-emphasis { color: var(--ink); background: var(--lime); }
@@ -538,7 +540,7 @@ h3 { font-size: 1.75rem; line-height: 1.05; letter-spacing: -.06em; }
 .demo-session-summary { margin: 40px 0 32px; }
 .demo-session-summary .demo-brief { margin-bottom: 0; }
 .demo-teaser-lead { max-width: 900px; font-size: 20px; text-wrap: balance; }
-.demo-paths { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 80px; margin-top: 52px; }
+.demo-paths { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 48px; margin-top: 52px; }
 .demo-paths article { min-width: 0; display: flex; flex-direction: column; align-items: flex-start; }
 .demo-paths h3 { margin-bottom: 28px; font-size: clamp(1.8rem, 2.8vw, 2.5rem); letter-spacing: -.045em; line-height: 1.1; }
 .demo-paths .demo-count { margin-bottom: 24px; }
@@ -557,7 +559,7 @@ h3 { font-size: 1.75rem; line-height: 1.05; letter-spacing: -.06em; }
 .demo-test-list li { margin-bottom: 12px; }
 @media (max-width: 960px) {
     .demo-hero-grid, .demo-editorial { gap: 36px; }
-    .demo-paths { gap: 36px; }
+    .demo-paths { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px; }
     .demo-hero-finding { padding: 24px; }
 }
 @media (max-width: 700px) {
