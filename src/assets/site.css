@@ -622,6 +622,10 @@ h3 { font-size: 1.75rem; line-height: 1.05; letter-spacing: -.06em; }
     .demo-statement { font-size: 24px; }
 }
 
+@media (max-width: 760px) {
+    .demo-index { position: static; }
+}
+
 @media (max-width: 480px) {
     .marketing-hero h1 { font-size: clamp(2.25rem, 12.8vw, 3.25rem); }
 }
