@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 title: ChatTI · Demo controllo di gestione
-description: Una sessione reale di ChatTI legge i ricavi aggregati, riconcilia gli scostamenti e costruisce sensibilità per il controllo di gestione, distinguendo risultati e limiti.
+description: "Percorso dimostrativo simulato basato su dati aziendali Tinaba aggregati e simulati: lettura dei ricavi, riconciliazione degli scostamenti e sensibilità per il controllo di gestione."
 permalink: /soluzioni/chat-ti/demo-controllo-gestione/
 ---
 
@@ -17,7 +17,7 @@ permalink: /soluzioni/chat-ti/demo-controllo-gestione/
     <a class="demo-back" href="/soluzioni/chat-ti/">← ChatTI · Dati aziendali e AI</a>
     <div class="demo-hero-grid">
       <div>
-        <p class="demo-label">Controllo di gestione · Sessione reale · 23 ottobre 2026</p>
+        <p class="demo-label">Controllo di gestione · Percorso dimostrativo simulato · Dati aziendali Tinaba aggregati e simulati · 23 ottobre 2026</p>
         <h1>Dal risultato alle leve.</h1>
         <p class="hero-lead">Una lettura dei ricavi diventa un confronto tra periodi, una spiegazione per componenti e una valutazione di scenari. Ogni passaggio chiarisce che cosa i dati mostrano e quali informazioni servono ancora alla direzione.</p>
         <a class="button" href="#perimetro">Esplora la sequenza <span aria-hidden="true">↓</span></a>
@@ -34,7 +34,7 @@ permalink: /soluzioni/chat-ti/demo-controllo-gestione/
 
 <div class="demo-context">
   <div class="container">
-    <p><strong>Il caso Tinaba di Banca Profilo.</strong> Dati aziendali aggregati, consultati con ChatTI il 23 ottobre 2026. Il perimetro consente di leggere ricavi e indicatori operativi; nelle fonti consultate non emergono budget, costi o criteri di allocazione. La pagina distingue perciò le variazioni osservate dalla redditività, che non è possibile dedurre. Tinaba fornisce la tecnologia; le valutazioni economiche e le decisioni restano alla banca.</p>
+    <p><strong>Il caso Tinaba di Banca Profilo.</strong> Percorso dimostrativo simulato su dati aziendali Tinaba aggregati e simulati, riferiti alla consultazione ChatTI del 23 ottobre 2026. Il perimetro consente di leggere ricavi e indicatori operativi; nelle fonti consultate non emergono budget, costi o criteri di allocazione. La pagina distingue perciò le variazioni osservate dalla redditività, che non è possibile dedurre. Tinaba fornisce la tecnologia; le valutazioni economiche e le decisioni restano alla banca.</p>
     <nav class="demo-index" aria-label="Passaggi della demo controllo di gestione">
       <a href="#perimetro">Perimetro</a><a href="#scostamenti">Scostamenti</a><a href="#calendario">Calendario</a><a href="#driver">Driver</a><a href="#scenari">Scenari</a><a href="#decisione">Decisione</a>
     </nav>
@@ -67,7 +67,7 @@ permalink: /soluzioni/chat-ti/demo-controllo-gestione/
     <div class="demo-answer">
       <p class="demo-transition">Dopo aver definito un periodo completo e confrontabile, la domanda successiva misura le differenze e ne riconcilia i contributi.</p>
       {{- prompt('Confronta settembre con agosto e con settembre dell’anno precedente. Quali componenti spiegano la differenza complessiva? Riconcilia il ponte con il totale.') }}
-      <p class="demo-label">La risposta · Ricavi aggregati Tinaba e Banca Profilo</p>
+      <p class="demo-label">La risposta · Ricavi aggregati e simulati Tinaba e Banca Profilo</p>
       <div class="demo-table-wrap" role="region" aria-label="Confronto dei ricavi per periodo" tabindex="0">
         <table class="demo-table">
           <caption>Valori aggregati per periodo</caption>
@@ -224,7 +224,7 @@ permalink: /soluzioni/chat-ti/demo-controllo-gestione/
   <div class="container demo-editorial">
     <div class="demo-aside"><h2 id="demo-method-title">Fonti e perimetro.</h2></div>
     <div class="demo-answer">
-      <p>Fonte: dati aziendali aggregati Tinaba e Banca Profilo, analizzati tramite ChatTI il <time datetime="2026-10-23">23 ottobre 2026</time>. La pagina documenta una sessione conclusa e non presenta dati aggiornati in tempo reale.</p>
+      <p>Base dimostrativa: dati aziendali Tinaba e Banca Profilo aggregati e simulati, riferiti alla consultazione ChatTI del <time datetime="2026-10-23">23 ottobre 2026</time>. Questa pagina non presenta dati aggiornati in tempo reale.</p>
       <p>Per il confronto sono stati usati settembre 2025, agosto 2026 e settembre 2026; ottobre 2026 era parziale. Agosto contiene 31 giorni distinti e settembre 30. Nei sei campi giornalieri utilizzati per le medie non risultano valori mancanti.</p>
       <p>Due voci di ricavo non erano valorizzate e restano escluse dalle somme. La riconciliazione aritmetica dei componenti non certifica la completezza contabile né la chiusura del periodo.</p>
       <p>Nelle fonti consultate non erano disponibili budget, costi o criteri di allocazione. Il percorso non misura margini o redditività. Le sensibilità mantengono costanti i rapporti osservati e non sono forecast; l'effetto economico dipende anche da costi, condizioni contrattuali, fattibilità e possibili spostamenti tra prodotti.</p>
