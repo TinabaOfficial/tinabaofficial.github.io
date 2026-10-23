@@ -311,3 +311,69 @@ if (
         }
     });
 }
+
+const sequenceMotionTargets = document.querySelectorAll(
+    ".roadmap-grid, .onboarding-flow, .platform-list, .use-case-list, .dna-sequence"
+);
+
+if (sequenceMotionTargets.length && !reducedMotion) {
+    if ("IntersectionObserver" in window) {
+        const sequenceObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("is-in-view");
+                    sequenceObserver.unobserve(entry.target);
+                }
+            });
+        }, { rootMargin: "0px 0px -12% 0px", threshold: 0 });
+
+        sequenceMotionTargets.forEach(target => sequenceObserver.observe(target));
+    } else {
+        sequenceMotionTargets.forEach(target => target.classList.add("is-in-view"));
+    }
+}
+
+const demoIndex = document.querySelector(".demo-index");
+
+if (demoIndex instanceof HTMLElement) {
+    /** @type {NodeListOf<HTMLAnchorElement>} */
+    const demoLinkNodes = demoIndex.querySelectorAll("a[href^='#']");
+    const demoLinks = [...demoLinkNodes];
+    const demoSections = demoLinks
+        .map(link => document.getElementById(decodeURIComponent(link.hash.slice(1))))
+        .filter(section => section instanceof HTMLElement);
+
+    /**
+     * Mark the navigation link for the current demo section.
+     * @param {HTMLElement} section The section currently in view.
+     * @returns {void}
+     */
+    function updateDemoProgress(section) {
+        demoLinks.forEach(link => {
+            if (link.hash === `#${section.id}`) {
+                link.setAttribute("aria-current", "location");
+            } else {
+                link.removeAttribute("aria-current");
+            }
+        });
+    }
+
+    if (demoSections[0]) {
+        updateDemoProgress(demoSections[0]);
+    }
+
+    if ("IntersectionObserver" in window && !reducedMotion) {
+        const progressObserver = new IntersectionObserver(entries => {
+            const currentSections = entries
+                .filter(entry => entry.isIntersecting)
+                .sort((first, second) => first.boundingClientRect.top - second.boundingClientRect.top);
+            const currentSection = currentSections[0]?.target;
+
+            if (currentSection instanceof HTMLElement) {
+                updateDemoProgress(currentSection);
+            }
+        }, { rootMargin: "-18% 0px -68% 0px", threshold: 0 });
+
+        demoSections.forEach(section => progressObserver.observe(section));
+    }
+}

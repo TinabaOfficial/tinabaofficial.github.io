@@ -3,7 +3,7 @@
   <desc id="desc">Mappa a tre livelli della navigazione Tinaba. Il primo livello contiene Cosa facciamo, Soluzioni, Scenari, Tinaba e Parliamone. Il secondo livello contiene le pagine principali. Il terzo livello dettaglia servizi, percorsi per tipo di banca, casi d’uso e onboarding.</desc>
   <style>
     text { font-family: Arial, sans-serif; fill: #111111; }
-    .mono { font-family: monospace; font-size: 14px; letter-spacing: 1px; }
+    .mono { font-family: Manrope, Arial, sans-serif; font-size: 14px; letter-spacing: 0; }
     .title { font-size: 25px; font-weight: 700; }
     .label { font-size: 20px; font-weight: 700; }
     .item { font-size: 17px; }
