@@ -79,13 +79,18 @@
 ]
 
 #v(10mm)
-#place(bottom + left, box(width: 100%, fill: orange, inset: (left: 13mm, right: 13mm, top: 5mm, bottom: 5mm))[
+#place(bottom + left, box(width: 100%, height: 20mm, fill: orange, inset: (left: 13mm, right: 13mm, top: 1mm, bottom: 1mm))[
   #grid(
-    columns: (1fr, auto), gutter: 5mm, align: horizon,
+    columns: (1fr, 40mm, auto), gutter: 3mm, align: horizon,
     block[
       #text(size: 15pt, weight: 700, fill: cmyk(19.2%, 19.2%, 0%, 89.8%))[La tecnologia abilita. La banca decide.]
       #v(1.5mm)
       #text(size: 8pt, weight: 600, fill: cmyk(0%, 17.5%, 27.5%, 84.3%))[Tinaba FaaS + ChatTI · Soluzioni digitali per banche e istituti finanziari]
+    ],
+    block(width: 40mm)[
+      #align(center)[
+        #image("assets/qr-chat-ti.svg", width: 18mm, height: 18mm, fit: "contain")
+      ]
     ],
     align(right)[
       #text(size: 9pt, weight: 700, fill: cmyk(19.2%, 19.2%, 0%, 89.8%))[business\@tinaba.it]
