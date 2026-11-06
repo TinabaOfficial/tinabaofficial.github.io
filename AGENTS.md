@@ -14,6 +14,13 @@ The `staging` branch deploys to
 
 ## 2. Standards
 
+- Commit messages must follow Conventional Commits: use
+  `<type>(<scope>): <description>` with a subject of at most 50 characters.
+  Include a body explaining what changed and why, wrapped at 72 characters.
+  Before committing, verify the subject, body, validation, and attribution.
+  Keep agent instructions separate from application changes. Codex commits use
+  author `Codex <https://openai.com/codex>` and end with the trailer
+  `Co-authored-by: Codex <https://openai.com/codex>`.
 - Keep the site B2B and institutional: Tinaba is the technology partner;
   Banca Profilo is a case study or partner, not the site's main identity.
 - Always use “Tinaba di Banca Profilo” as the consumer product name, including
