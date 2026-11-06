@@ -659,3 +659,8 @@ h3 { font-size: 1.75rem; line-height: 1.05; letter-spacing: -.06em; }
     .hero-wave { animation: none !important; }
     *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
+
+/* Editorial illustrations sit alongside the existing narrative. */
+.split-grid:has(> .editorial-illustration) { grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); align-items: center; }
+.editorial-illustration { display: block; width: 100%; height: auto; max-width: 520px; justify-self: end; }
+@media (max-width: 760px) { .editorial-illustration { max-width: 100%; } }
