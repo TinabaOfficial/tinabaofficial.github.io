@@ -366,3 +366,20 @@ must not be copied into this site without separate approval:
   components.
 - Section kickers on dark surfaces must use the same accessible light tone;
   they must not inherit the muted light-surface color.
+
+- La storia aziendale vive in `/storia/`, collegata dall’hero della homepage
+  e dal footer. La timeline usa contenuti documentati, card espandibili e
+  immagini locali. La visura ordinaria del 4 febbraio 2026 riporta il 9 luglio
+  2015 come data dell’atto costitutivo. La visura storica del 28 gennaio 2021
+  riporta l’atto del 20 dicembre 2017 e l’iscrizione della variazione della
+  forma giuridica in S.p.A. il 19 gennaio 2018.
+
+- La timeline della storia usa il segnale verticale delle sequenze del sito;
+  il movimento è decorativo e disattivato con `prefers-reduced-motion`.
+
+- Ogni tappa della timeline contiene un’immagine locale nell’approfondimento.
+  Le illustrazioni di `src/assets/illustrations/history/` sono decorative e
+  non rappresentano documenti o fotografie storiche.
+
+- Ogni tappa della storia include riferimenti pubblici pertinenti, raccolti in
+  `src/_data/historySources.json`. Le visure condivise restano documenti interni.
