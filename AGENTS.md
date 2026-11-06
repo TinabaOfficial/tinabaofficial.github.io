@@ -266,6 +266,10 @@ The `staging` branch deploys to
 - Case-use and hero media must preserve the source image's aspect ratio;
   panoramic or edge-sensitive assets require a dedicated layout treatment and
   must not be cropped with the default portrait/card treatment.
+- Images presented as content must use the shared `--box-radius` corner
+  treatment, including newly added images and their visible containers. Keep
+  logos and structural or decorative diagrams exempt. Verify the treatment
+  when introducing a new image class or layout.
 - Background motion is decorative only: it uses CSS transforms, has no runtime
   dependency or external request, and must remain disabled for users who prefer
   reduced motion.
