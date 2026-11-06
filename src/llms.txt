@@ -37,6 +37,7 @@ Il sito è istituzionale e B2B. Tinaba è il partner tecnologico; non va descrit
 - [Banca del territorio](https://tinaba.it/scenari/banca-territorio/): continuità tra digitale, filiale, consulenza e relazione locale.
 - [Case study Banca Profilo](https://tinaba.it/case-study/): esempio del ruolo tecnologico di Tinaba e del presidio bancario di Banca Profilo.
 - [Chi siamo](https://tinaba.it/tinaba/): identità, valori e azienda.
+- [La nostra storia](https://tinaba.it/storia/): tappe del percorso di Tinaba dal 2015.
 - [Contatti](https://tinaba.it/contatti/): contatto istituzionale per progetti B2B.
 - [Privacy](https://tinaba.it/privacy/): trattamento dei dati e assenza di tracking sul sito.
 - [Brand guidelines](https://tinaba.it/brand-guidelines/): riferimento pubblico per architettura, tono, visual system e accessibilità.

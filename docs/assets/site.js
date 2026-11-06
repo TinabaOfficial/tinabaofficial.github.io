@@ -313,7 +313,7 @@ if (
 }
 
 const sequenceMotionTargets = document.querySelectorAll(
-    ".roadmap-grid, .onboarding-flow, .platform-list, .use-case-list, .dna-sequence"
+    ".roadmap-grid, .onboarding-flow, .platform-list, .use-case-list, .dna-sequence, .history-timeline"
 );
 
 if (sequenceMotionTargets.length && !reducedMotion) {

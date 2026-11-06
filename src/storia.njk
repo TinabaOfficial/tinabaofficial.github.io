@@ -1,0 +1,55 @@
+---
+layout: layouts/base.njk
+permalink: /storia/
+title: La nostra storia
+description: Le tappe del percorso di Tinaba, dalle origini all'evoluzione della piattaforma fintech per le banche.
+---
+
+<section class="page-hero section-dark history-hero">
+  <div class="container history-hero-grid">
+    <div>
+      <p class="section-kicker">La nostra storia</p>
+      <h1>Un percorso che continua a <em>cambiare.</em></h1>
+      <p class="hero-lead">Dalle prime idee sui pagamenti digitali a una piattaforma per l'evoluzione della banca. Una storia di tecnologia, incontri e nuove possibilità.</p>
+    </div>
+    <div class="history-hero-years" aria-label="Dal 2015 a oggi"><span>2015</span><span aria-hidden="true">↓</span><span>oggi</span></div>
+  </div>
+</section>
+<section class="section history-section">
+  <div class="container">
+    <div class="history-intro"><h2>Le tappe di Tinaba.</h2><p>Un'idea cresce attraverso le persone, le partnership e le esperienze che contribuisce a costruire.</p></div>
+{% set milestones = [
+      { year: '2015', title: 'Nasce un’idea', lead: 'Tinaba prende forma insieme a Banca Profilo.', detail: 'Il 9 luglio viene costituita Tinaba, con il supporto del fondo Sator. A novembre Banca Profilo annuncia la collaborazione con Tinaba S.r.l. per lo sviluppo di un nuovo canale digitale.', image: '/assets/reference/tinaba-about.png', alt: 'Illustrazione astratta della visione Tinaba' },
+      { year: '2016', title: 'Tinaba si presenta al pubblico', lead: 'Un nuovo ecosistema digitale prende forma.', detail: 'Nel luglio 2016 Tinaba presenta il proprio progetto: un’esperienza che riunisce pagamenti, trasferimenti e condivisione del denaro, in collaborazione con Banca Profilo.', image: '/assets/illustrations/history/2016.svg', alt: '' },
+      { year: '2017', title: 'I pagamenti incontrano nuovi luoghi', lead: 'La tecnologia esce dall’app e incontra la vita quotidiana.', detail: 'L’accordo con il Gruppo api apre alla possibilità di pagare tramite smartphone nelle stazioni di servizio IP.', image: '/assets/illustrations/history/2017.svg', alt: '' },
+      { year: '2018', title: 'Investimenti e nuovi orizzonti', lead: 'Il digitale incontra il risparmio e i pagamenti internazionali.', detail: 'Il 19 gennaio viene iscritta la trasformazione di Tinaba da S.r.l. a S.p.A., relativa all’atto del 20 dicembre 2017. Con Banca Profilo arriva il Robo Advisory; nasce inoltre la collaborazione con Alipay per l’accettazione dei pagamenti presso gli esercenti convenzionati.', image: '/assets/reference/case-investments.png', alt: 'Illustrazione dedicata ai percorsi di investimento digitali' },
+      { year: '2019', title: 'Un ecosistema che si amplia', lead: 'Le partnership avvicinano servizi e attività commerciali.', detail: 'La collaborazione con Federalberghi porta la soluzione di accettazione Alipay all’attenzione delle strutture associate.', image: '/assets/illustrations/history/2019.svg', alt: '' },
+      { year: '2020', title: 'Una partnership più forte', lead: 'Banca Profilo consolida il legame con Tinaba.', detail: 'La banca rafforza la partecipazione nella società, accompagnando lo sviluppo del canale digitale.', image: '/assets/illustrations/history/2020.svg', alt: '' },
+      { year: '2021', title: 'Le connessioni crescono', lead: 'Si rafforza la collaborazione nei pagamenti.', detail: 'Tinaba e Banca Profilo ampliano la collaborazione con Alipay per proseguire lo sviluppo dei servizi digitali.', image: '/assets/illustrations/history/2021.svg', alt: '' },
+      { year: '2022', title: 'L’ecosistema si apre agli asset digitali', lead: 'Un nuovo servizio nasce dalla collaborazione con CheckSig.', detail: 'La collaborazione con CheckSig amplia l’esperienza digitale con servizi dedicati alle criptovalute, integrando nell’app le competenze di un partner specializzato.', image: '/assets/illustrations/history/2022.svg', alt: '' },
+      { year: '2023', title: 'Oltre i confini', lead: 'La piattaforma guarda alle banche e ai pagamenti internazionali.', detail: 'Tinaba sviluppa un modello di offerta per le banche. La collaborazione con Alipay+ abilita i pagamenti transfrontalieri attraverso l’app Tinaba di Banca Profilo.', image: '/assets/reference/case-alipay.png', alt: 'Illustrazione dedicata ai pagamenti internazionali' },
+      { year: '2024', title: 'Un ecosistema più aperto', lead: 'L’esperienza digitale accoglie nuovi servizi.', detail: 'Tinaba di Banca Profilo annuncia l’integrazione dei Mini Program Alipay+, aprendo la strada a esperienze e servizi di terze parti nell’app.', image: '/assets/illustrations/history/2024.svg', alt: '' },
+      { year: '2025', title: 'Nuovi percorsi di investimento', lead: 'La piattaforma si arricchisce di un nuovo servizio.', detail: 'Banca Profilo lancia il conto titoli attraverso la piattaforma Tinaba, ampliando i percorsi digitali per gli investimenti.', image: '/assets/illustrations/history/2025.svg', alt: '' },
+      { year: '2026', title: 'Una piattaforma, nuove possibilità', lead: 'La storia prosegue tra pagamenti internazionali, intelligenza artificiale e fintech-as-a-service.', detail: 'I pagamenti con Alipay+ raggiungono la Cina continentale. Tinaba e Banca Profilo evolvono la loro collaborazione verso un modello fintech-as-a-service, con la piattaforma tecnologica al centro. Con ChatTI, Tinaba porta l’intelligenza artificiale nell’esplorazione dei dati aziendali a supporto delle decisioni.', image: '/assets/illustrations/home-evoluzione-v2.jpg', alt: 'Illustrazione dell’evoluzione dei servizi digitali' }
+] %}
+    <ol class="history-timeline">
+{% for item in milestones %}
+      <li class="history-event">
+        <span class="history-marker" aria-hidden="true"></span>
+        <article class="history-card">
+          <p class="history-year">{{ item.year }}</p>
+          <h3>{{ item.title }}</h3>
+          <p class="history-lead">{{ item.lead }}</p>
+          <details>
+            <summary>Scopri la tappa <span class="history-toggle" aria-hidden="true"></span></summary>
+            <div class="history-detail"><p>{{ item.detail }}</p>{% if item.year == "2026" %}<p><a class="text-link" href="/soluzioni/chat-ti/">Scopri ChatTI <span aria-hidden="true">↗</span></a></p>{% endif %}{% if item.image %}<img src="{{ item.image }}" alt="{{ item.alt }}" loading="lazy" />{% endif %}
+              <div class="history-sources"><p>Per approfondire</p><ul>{% for source in historySources[item.year] %}<li><a href="{{ source.url }}">{{ source.label }} <span aria-hidden="true">↗</span></a></li>{% endfor %}</ul></div>
+            </div>
+          </details>
+        </article>
+      </li>
+{% endfor %}
+    </ol>
+  </div>
+</section>
+<section class="section section-accent"><div class="container split-grid"><h2>La prossima tappa si costruisce insieme.</h2><div><p class="large-copy">La nostra esperienza continua a evolvere insieme alle banche e ai partner che immaginano nuovi servizi digitali.</p><a class="button button-dark" href="/contatti/">Parliamone <span aria-hidden="true">↗</span></a></div></div></section>
