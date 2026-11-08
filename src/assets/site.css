@@ -109,7 +109,7 @@ h3 { font-size: 1.75rem; line-height: 1.05; letter-spacing: -.06em; }
 .section-dark:not(.connection-band) :focus-visible, .case-banner :focus-visible, .feature-card-dark :focus-visible, .solution-card-dark :focus-visible { outline-color: var(--lime); }
 .connection-band { color: var(--ink); background: #e9e8e2; }
 .connection-band { padding-bottom: 85px; }
-.intro-section { padding-top: 0; background: #e9e8e2; }
+.intro-section { padding-top: 85px; background: var(--paper); }
 .case-banner { color: var(--paper); background: var(--anthracite); }
 .section-dark .hero-lead, .case-banner .hero-lead { color: #d7d7cf; }
 .section-dark h1 em { color: var(--lime); }
@@ -418,7 +418,7 @@ h3 { font-size: 1.75rem; line-height: 1.05; letter-spacing: -.06em; }
     .large-copy { font-size: clamp(1.2rem, 5.6vw, 1.4rem); }
     .section, .page-hero { padding: 75px 0; }
     .connection-band { padding-bottom: 60px; }
-    .intro-section { padding-top: 0; }
+    .intro-section { padding-top: 60px; }
     .chat-demo-intro { margin-bottom: 38px; text-align: left; }
     .chat-demo-intro h2, .chat-demo-intro .large-copy { margin-left: 0; }
     .chatgpt-mock { grid-template-columns: 145px minmax(0, 1fr); border-radius: 12px; }
@@ -721,3 +721,19 @@ h3 { font-size: 1.75rem; line-height: 1.05; letter-spacing: -.06em; }
 }
 
 @media (prefers-reduced-motion: reduce) { .history-timeline::after { display: none; } }
+
+/* Decorative data flow between the hero and the platform story. */
+.home-signal { position: relative; display: grid; align-content: center; gap: 23px; height: 210px; overflow: hidden; container-type: inline-size; background: #101113; }
+.home-signal-track { position: relative; height: 1px; background: repeating-linear-gradient(90deg, #627075 0 1px, transparent 1px 13px); }
+.home-signal-track i { position: absolute; top: -2px; left: var(--x); width: 5px; height: 5px; background: var(--lime); opacity: .85; animation: home-signal-flow calc(var(--duration) * .12) linear calc(var(--delay) * .12) infinite; }
+.home-signal-track .signal-core { background: var(--lime); }
+.home-signal-track .signal-app { background: #8c83ed; }
+.home-signal-track .signal-services { background: #FF5E00; }
+.home-signal-frame { position: absolute; top: 50%; left: 50%; width: 144px; height: 108px; overflow: hidden; background: #101113; transform: translate(-50%, -50%); animation: home-signal-scan 24s ease-in-out infinite alternate; }
+.home-signal-frame::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(#e7e9e4, #e7e9e4) top left / 9px 1px no-repeat, linear-gradient(#e7e9e4, #e7e9e4) top left / 1px 9px no-repeat, linear-gradient(#e7e9e4, #e7e9e4) top right / 9px 1px no-repeat, linear-gradient(#e7e9e4, #e7e9e4) top right / 1px 9px no-repeat, linear-gradient(#e7e9e4, #e7e9e4) bottom left / 9px 1px no-repeat, linear-gradient(#e7e9e4, #e7e9e4) bottom left / 1px 9px no-repeat, linear-gradient(#e7e9e4, #e7e9e4) bottom right / 9px 1px no-repeat, linear-gradient(#e7e9e4, #e7e9e4) bottom right / 1px 9px no-repeat; }
+.home-signal-magnified { --signal-scale-y: 1.5; position: absolute; top: 50%; left: 50%; width: 100cqw; height: 210px; display: grid; align-content: center; gap: 23px; transform: translate(-50%, -50%) scaleX(1.5); animation: home-signal-lens 24s ease-in-out infinite alternate; }
+@keyframes home-signal-lens { from { transform: translate(calc(-50% + min(18vw, 260px) * 1.5), -50%) scaleX(1.5); } to { transform: translate(calc(-50% - min(18vw, 260px) * 1.5), -50%) scaleX(1.5); } }
+@keyframes home-signal-scan { from { transform: translate(calc(-50% - min(18vw, 260px)), -50%); } to { transform: translate(calc(-50% + min(18vw, 260px)), -50%); } }
+@keyframes home-signal-flow { 0% { transform: translateX(-100px) scaleY(var(--signal-scale-y, 1)); opacity: 0; } 15%, 85% { opacity: .85; } 100% { transform: translateX(100px) scaleY(var(--signal-scale-y, 1)); opacity: 0; } }
+@media (max-width: 600px) { .home-signal { height: 150px; gap: 18px; } .home-signal-frame { width: 108px; height: 86px; } .home-signal-magnified { height: 150px; gap: 18px; } .home-signal-track i:nth-child(even) { display: none; } }
+@media (prefers-reduced-motion: reduce) { .home-signal-track i, .home-signal-frame, .home-signal-magnified { animation: none; } .home-signal-magnified i { transform: scaleY(1.5); } }
