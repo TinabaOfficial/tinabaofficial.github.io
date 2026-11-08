@@ -359,6 +359,8 @@ h3 { font-size: 1.75rem; line-height: 1.05; letter-spacing: -.06em; }
 .footer-grid > * { min-width: 0; }
 .wordmark-footer { color: var(--paper); }
 .footer-note, .footer-meta { color: #8d8d87; font-size: 13px; }
+.footer-mascots { display: block; width: min(100%, 360px); height: auto; margin: 8px 0 0 -10px; mix-blend-mode: lighten; }
+.footer-mascots-caption { margin: 0; color: #c5c5be; font-size: 13px; }
 .footer-link-groups { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-content: start; }
 .footer-links { display: grid; gap: 8px; align-content: start; font-size: 14px; }
 .footer-heading { margin: 0 0 8px; color: var(--paper); font-family: Manrope, Arial, sans-serif; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; }
